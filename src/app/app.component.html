@@ -12,11 +12,15 @@
   </div>
 </header>
 <nav>
-  <a href="#">Dashboard</a>
-  <a href="#">Achievements</a>
-  <a href="#">Mounts</a>
-  <a href="#">Minions</a>
+  <nav>
+    <a mat-button href="#">Dashboard</a>
+    <a mat-button ref="#">Achievements</a>
+    <a mat-button href="#">Mounts</a>
+    <a mat-button href="#">Minions</a>
+  </nav>
 </nav>
 
-<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<app-character-panel></app-character-panel>
+
+
 
