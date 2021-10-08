@@ -1,0 +1,10 @@
+.character-sheet {
+    display: grid;
+    grid-template-columns: 40% 30%;
+}
+
+.char-portrait {
+    img {
+        width: 100%;
+    }
+}

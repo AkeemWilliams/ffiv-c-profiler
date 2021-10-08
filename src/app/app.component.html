@@ -2,10 +2,7 @@
   <div class='logo'>
     <div>logo</div>
   </div>
-  <div class="search-inp">
-    <input type="text" name="text">
-    <button>Profile Character</button>
-  </div>
+
   <div class="profile">
     <img src="" alt="charcater name"/>
     <span class="profile-name">Lorem Ipsum</span>
@@ -20,6 +17,19 @@
   </nav>
 </nav>
 
+
+<section class=dashboard-search-area> 
+  <div class="search-inp"> 
+    <p>A helpful tool to track character progression in Final Fantasy XIV. Track Achievements, Mounts and Minion Collections. Be it from seasoned players to sprouts, this tool is made for all collectors. </p>
+
+    <mat-form-field class="char-search" appearance="fill">
+      <mat-label>Character Url or ID</mat-label>
+      <input matInput type="text" placeholder="https://na.finalfantasyxiv.com/lodestone/character/1234567" [(ngModel)]="characterUrl">
+    </mat-form-field>
+    <button mat-raised-button (click)="searchCharacter()" [ngClass]="characterUrl  ? 'btn-active' : '' " [disabled]="!characterUrl">Profile Character</button> 
+
+  </div>
+</section>
 <app-character-panel></app-character-panel>
 
 

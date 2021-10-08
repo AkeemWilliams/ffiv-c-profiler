@@ -2,8 +2,15 @@
 
 html, body { height: 100%; }
 body { 
-    background: #000;
+    background: #1f2736;
     color: #fff;
     margin: 0;
      font-family: Roboto, "Helvetica Neue", sans-serif; 
     }
+section{
+    padding: 20px;
+    box-sizing: border-box;
+}
+button.btn-active{
+    background: #7b1fa2;
+}

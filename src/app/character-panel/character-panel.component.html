@@ -1,17 +1,25 @@
-<div>
-
-    <div class="character-proper">
-        <div class="char-name">
-            <div>Title: {{userData.Character.Title}}</div> <div>{{userData.Character.Name}}</div> <div>DC: {{userData.Character.DC}}</div>
-        </div>
-        <div class="char-portrait">
-            <img src="{{userData.Character.Portrait}}" alt="Character Portrait" />
-        </div>
-   </div>
-
-    <div class="mounts-proper">
-        
+<div class="character-sheet">
+  <section class="character-proper">
+    <div class="char-name">
+      <div>{{userData.name}}</div>
+      <div>Server: {{userData.server}}</div>
     </div>
-    <div class="minions-proper"></div>
+    <div class="char-portrait">
+      <img src="{{userData.portrait}}" alt="Character Portrait" />
+    </div>
+  </section>
+
+  <section class="user-progression">
+  <div class="achievements-proper">achievements
+    <app-user-progress-bar [value]="achievementCompletion" [bufferValue]="200"></app-user-progress-bar>
+  </div>
+  <div class="mounts-proper">mounts
+    <app-user-progress-bar [value]="mountCompletion" [bufferValue]="200"></app-user-progress-bar>
+  </div>
+  <div class="minions-proper">minions
+    <app-user-progress-bar [value]="minionCompletion" [bufferValue]="200"></app-user-progress-bar>
+  </div>
+  </section>
+
 
 </div>
