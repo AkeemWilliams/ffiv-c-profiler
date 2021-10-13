@@ -10,27 +10,15 @@
 </header>
 <nav>
   <nav>
-    <a mat-button href="#">Dashboard</a>
-    <a mat-button ref="#">Achievements</a>
-    <a mat-button href="#">Mounts</a>
-    <a mat-button href="#">Minions</a>
+    <a mat-button routerLink="/home">Dashboard</a>
+    <a mat-button routerLink="/mounts">Mounts</a>
+    <a mat-button routerLink="/minions">Minions</a>
   </nav>
 </nav>
 
+<router-outlet></router-outlet>
 
-<section class=dashboard-search-area> 
-  <div class="search-inp"> 
-    <p>A helpful tool to track character progression in Final Fantasy XIV. Track Achievements, Mounts and Minion Collections. Be it from seasoned players to sprouts, this tool is made for all collectors. </p>
-
-    <mat-form-field class="char-search" appearance="fill">
-      <mat-label>Character Url or ID</mat-label>
-      <input matInput type="text" placeholder="https://na.finalfantasyxiv.com/lodestone/character/1234567" [(ngModel)]="characterUrl">
-    </mat-form-field>
-    <button mat-raised-button (click)="searchCharacter()" [ngClass]="characterUrl  ? 'btn-active' : '' " [disabled]="!characterUrl">Profile Character</button> 
-
-  </div>
-</section>
-<app-character-panel></app-character-panel>
+<!-- <app-character-panel *ngIf="characterID" [characterID]="characterID"></app-character-panel> -->
 
 
 

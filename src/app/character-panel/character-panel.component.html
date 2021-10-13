@@ -1,9 +1,23 @@
-<div class="character-sheet">
+
+<section class=dashboard-search-area> 
+  <div class="search-inp"> 
+    <p>A helpful tool to track character progression in Final Fantasy XIV. Track Achievements, Mounts and Minion Collections. Be it from seasoned players to sprouts, this tool is made for all collectors. </p>
+
+    <mat-form-field class="char-search" appearance="fill">
+      <mat-label>Character Url or ID</mat-label>
+      <input matInput type="text" placeholder="https://na.finalfantasyxiv.com/lodestone/character/1234567" [(ngModel)]="characterUrl">
+    </mat-form-field>
+    <button mat-raised-button (click)="searchCharacter()" [ngClass]="characterUrl  ? 'btn-active' : '' " [disabled]="!characterUrl">Profile Character</button> 
+
+  </div>
+</section>
+
+<div *ngIf="userData" class="character-sheet">
+  <section class="char-name">
+    <div>{{userData.name}}</div>
+    <div>Server: {{userData.server}}</div>
+  </section>
   <section class="character-proper">
-    <div class="char-name">
-      <div>{{userData.name}}</div>
-      <div>Server: {{userData.server}}</div>
-    </div>
     <div class="char-portrait">
       <img src="{{userData.portrait}}" alt="Character Portrait" />
     </div>
@@ -11,13 +25,13 @@
 
   <section class="user-progression">
   <div class="achievements-proper">achievements
-    <app-user-progress-bar [value]="achievementCompletion" [bufferValue]="200"></app-user-progress-bar>
+    <app-user-progress-bar [value]="userData.achievementCompletion" [bufferValue]="200"></app-user-progress-bar>
   </div>
   <div class="mounts-proper">mounts
-    <app-user-progress-bar [value]="mountCompletion" [bufferValue]="200"></app-user-progress-bar>
+    <app-user-progress-bar [value]="userData.mountCompletion" [bufferValue]="200"></app-user-progress-bar>
   </div>
   <div class="minions-proper">minions
-    <app-user-progress-bar [value]="minionCompletion" [bufferValue]="200"></app-user-progress-bar>
+    <app-user-progress-bar [value]="userData.minionCompletion" [bufferValue]="200"></app-user-progress-bar>
   </div>
   </section>
 

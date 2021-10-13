@@ -14,3 +14,12 @@ section{
 button.btn-active{
     background: #7b1fa2;
 }
+//mat overrides
+.mat-progress-bar {
+    height: 8px !important;
+    border-radius: 10px;
+}
+
+.mat-progress-bar .mat-progress-bar-fill::after {
+    border-radius: 10px;
+}
