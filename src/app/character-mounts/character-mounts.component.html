@@ -1,0 +1,32 @@
+<div>
+    <section class="filter-area">
+        <mat-form-field appearance="fill">
+            <mat-label>Select an option</mat-label>
+            <mat-select [(ngModel)]="selectedval" (ngModelChange)="toggleShow($event)">
+                <mat-option *ngFor="let opt of filterOptions" [value]="opt.value">
+                    {{opt.viewValue}}
+                </mat-option> 
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+                 <input matInput type="search" id="search-box" [(ngModel)]= 'mountNames'>
+                 <span matSuffix><span class="material-icons">
+                    search
+                    </span></span>
+          </mat-form-field>
+    </section>
+    <section>
+        <div class="mount-container" >
+            <ng-container *ngFor="let mount of finalMountList | searchFilter : mountNames">
+                <div class="mount-box" [ngClass]="mount.isOwned ? 'owned' : ''" >
+                    <img src="{{mount.image}}" />
+                    <span>{{mount.name}}</span>
+                    <span class="material-icons">
+                        check_circle
+                        </span>
+                </div>
+            </ng-container>
+        </div>
+
+    </section>
+</div>

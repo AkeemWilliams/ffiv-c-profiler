@@ -1,0 +1,21 @@
+<div>
+    <section>
+        <mat-form-field appearance="fill">
+            <mat-label>Select an option</mat-label>
+            <mat-select [(ngModel)]="selectedval" (ngModelChange)="toggleShow($event)">
+                <mat-option *ngFor="let opt of filterOptions" [value]="opt.value">
+                    {{opt.viewValue}}
+                </mat-option> 
+            </mat-select>
+          </mat-form-field>
+
+        <div class="minion-container">
+            <ng-container *ngFor="let minion of finalMinionList">
+                <div class="minion-box" [ngClass]="minion.isOwned ? 'owned' : ''" >
+                    <img src="{{minion.image}}" />
+                    <span>{{minion.name}}</span></div>
+            </ng-container>
+        </div>
+
+    </section>
+</div>

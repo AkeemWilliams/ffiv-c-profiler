@@ -1,0 +1,44 @@
+
+.mount-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 18px;
+    max-width: 80em;
+    margin: 0 auto;
+    grid-auto-rows: minmax(230px, auto);
+    .mount-box{
+        border: 1px solid #6c577e;
+        background: rgb(255 255 255 / 10%);
+        font-size: 14px;
+        text-align: center;
+        padding: 14px;
+        position: relative;
+        .material-icons{
+            display: none;
+        }
+        &.hidden {
+            display: none;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            /* visibility: hidden; */
+            /* opacity: 0 !important; */
+            /* transition: all .2s ease; */
+        }
+        &.owned {
+            opacity: 1;
+            img {
+                width: 100%;
+                opacity: 1;
+            }
+            .material-icons{
+                display: block;
+            }
+        }
+        img {
+            width: 100%;
+            opacity: .6;
+        }
+    }
+}
+

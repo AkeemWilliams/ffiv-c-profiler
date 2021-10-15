@@ -1,26 +1,22 @@
-<header>
+<!-- <header>
   <div class='logo'>
     <div>logo</div>
   </div>
-  <div class="search-inp">
-    <input type="text" name="text">
-    <button>Profile Character</button>
-  </div>
+
   <div class="profile">
     <img src="" alt="charcater name"/>
     <span class="profile-name">Lorem Ipsum</span>
   </div>
-</header>
+</header> -->
 <nav>
-  <nav>
-    <a mat-button href="#">Dashboard</a>
-    <a mat-button ref="#">Achievements</a>
-    <a mat-button href="#">Mounts</a>
-    <a mat-button href="#">Minions</a>
-  </nav>
+    <a mat-button routerLinkActive="acive-link" routerLink="/home">Dashboard</a>
+    <a *ngIf="showLink" mat-button routerLinkActive="acive-link" routerLink="/mounts">Mounts</a>
+    <a *ngIf="showLink" mat-button routerLinkActive="acive-link" routerLink="/minions">Minions</a>
 </nav>
 
-<app-character-panel></app-character-panel>
+<router-outlet (activate)="onValueChange($event)"></router-outlet>
+
+<!-- <app-character-panel *ngIf="characterID" [characterID]="characterID"></app-character-panel> -->
 
 
 
