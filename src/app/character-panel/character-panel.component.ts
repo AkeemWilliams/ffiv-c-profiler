@@ -37,8 +37,14 @@ export class CharacterPanelComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.userData){
+      setTimeout(() => {
+        window.scrollTo({top:document.body.scrollHeight + 100, behavior: 'smooth'})
+      },300);
       return this.userData;
     }else{
+      setTimeout(() => {
+        window.scrollTo({top:document.body.scrollHeight + 100, behavior: 'smooth'})
+      },300);
       return this.userData = this.commonData.characterData;
     }
   }
@@ -60,11 +66,14 @@ export class CharacterPanelComponent implements OnInit {
       this.userData.mountCompletion = Math.round(this.userData.mounts.count/this.userData.mounts.total * 100);
       this.userData.achievementCompletion = Math.round(this.userData.achievements.count/this.userData.achievements.total * 100);
       this.userData.minionCompletion = Math.round(this.userData.minions.count/this.userData.minions.total * 100);
+      this.userData.bardCompletion = Math.round(this.userData.mounts.count/this.userData.mounts.total * 100);
+      this.userData.achievementCompletion = Math.round(this.userData.achievements.count/this.userData.achievements.total * 100);
+      this.userData.minionCompletion = Math.round(this.userData.minions.count/this.userData.minions.total * 100);
       this.commonData.savedCharacterData(this.userData);
 
       this.characterObj.emit(this.commonData)
       this.showSpinner = false;
-
+console.log(this);
       setTimeout(() => {
         window.scrollTo({top:document.body.scrollHeight + 100, behavior: 'smooth'})
       },300);

@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { CommonServiceService } from '../common-service.service';
 import { GetCharacterServiceService } from '../get-character-service.service';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { dialogDT } from '../Interfaces/dialog-int'
 interface filterOp {
   value: string;
   viewValue: string;
@@ -17,6 +19,30 @@ export class CharacterMinionsComponent implements OnInit {
   minionList!:Array<any>;
   finalMinionList!: Array<any>;
   selectedval: string = 'all';
+  minNames: string = "";
+  showSpinner: boolean = false;
+  errorShow:boolean = false;
+  errMsg:string = "Unable to get minion data. Please try again later.";
+
+  selectedDetail:dialogDT = {
+    description: '',
+    enhanced_description: '',
+    icon: '',
+    id: 0,
+    image: '',
+    item_id: null,
+    movement: '',
+    name: '',
+    order: 0,
+    order_group: 0,
+    owned: '',
+    patch: '',
+    seats: 0,
+    sources: null,
+    tooltip: '',
+    isOwned: false,
+    sauce: undefined
+  };
 
 
   filterOptions: filterOp[] = [
@@ -25,16 +51,19 @@ export class CharacterMinionsComponent implements OnInit {
     {value: 'uncollected', viewValue: 'Uncollected'}
   ];
 
-  constructor(public comdata:CommonServiceService, private getMinions:GetCharacterServiceService) { }
+  constructor(public comdata:CommonServiceService, public dialog:MatDialog, private getMinions:GetCharacterServiceService) { }
 
   ngOnInit(): void {
+    this.showSpinner = true;
     this.getMinions.getMinions().subscribe(res =>{
+      this.errorShow = false;
+
       this.userMinionsList = this.comdata.characterData.userMinions;
       if(this.userMinionsList != null){
         this.userMinionsList.sort((a, b) => (a.Name > b.Name ? 1 : -1));
       }
-      let resp: any[] = res.results;
-      resp.sort((a, b) => (a.name > b.name ? 1 : -1));
+      let resp: any[] | undefined | null = res.results;
+      if(resp){      resp.sort((a, b) => (a.name > b.name ? 1 : -1));
       if(this.userMinionsList != null){
 
       resp.forEach(o1 =>{
@@ -47,9 +76,32 @@ export class CharacterMinionsComponent implements OnInit {
       
       })
     }
+  }
+    if(resp)
       this.finalMinionList = resp;
-      console.log(this);
-    })
+      
+      setTimeout(() => {
+        this.showSpinner = false;
+
+      });
+    },(error)=>{ 
+      console.log(error);
+      this.errorShow = true;
+      this.showSpinner = false;
+
+      return
+      })
+  }
+
+  itemClick(event: dialogDT){
+    console.log(event);
+    this.selectedDetail = event;
+     if(event.sources)
+     this.selectedDetail.sauce = event.sources[0]
+    this.dialog.open(DialogContent, {
+      data: this.selectedDetail
+      
+    });
   }
 
   toggleShow(val:string){
@@ -79,10 +131,18 @@ export class CharacterMinionsComponent implements OnInit {
         collectedminions.forEach((cminion)=>{
           (cminion as HTMLElement).classList.add("hidden");
         });
-
-
         break;
   }
   }
 
 }
+@Component({
+  selector: 'dialog-tmpt',
+  templateUrl: '../dialog-tmpt.html'
+})
+
+export class DialogContent {
+    constructor(@Inject(MAT_DIALOG_DATA) public data: dialogDT) {}
+
+}
+

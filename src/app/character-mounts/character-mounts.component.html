@@ -1,6 +1,11 @@
 <div>
     <section class="filter-area">
-        <mat-form-field appearance="fill">
+        <div>
+        <div class="page-name">
+            <h2>Character</h2>
+            <span>Mounts</span> 
+        </div>
+        <mat-form-field *ngIf="!errorShow" appearance="fill">
             <mat-label>Select an option</mat-label>
             <mat-select [(ngModel)]="selectedval" (ngModelChange)="toggleShow($event)">
                 <mat-option *ngFor="let opt of filterOptions" [value]="opt.value">
@@ -8,22 +13,25 @@
                 </mat-option> 
             </mat-select>
           </mat-form-field>
-          <mat-form-field appearance="fill">
+          <mat-form-field *ngIf="!errorShow" appearance="fill">
                  <input matInput type="search" id="search-box" [(ngModel)]= 'mountNames'>
                  <span matSuffix><span class="material-icons">
                     search
                     </span></span>
           </mat-form-field>
+        </div>
     </section>
     <section>
+        <div class="err-cont" *ngIf="errorShow">{{errMsg}}</div>
+        <div class="items-collected"><p>{{comdata.characterData.mounts.count}} of {{comdata.characterData.mounts.total}} obtained</p></div>
         <div class="mount-container" >
             <ng-container *ngFor="let mount of finalMountList | searchFilter : mountNames">
-                <div class="mount-box" [ngClass]="mount.isOwned ? 'owned' : ''" >
+                <div (click)="itemClick(mount)" class="mount-box" [ngClass]="mount.isOwned ? 'owned' : ''" >
                     <img src="{{mount.image}}" />
                     <span>{{mount.name}}</span>
-                    <span class="material-icons">
+                    <!-- <span class="material-icons">
                         check_circle
-                        </span>
+                        </span> -->
                 </div>
             </ng-container>
         </div>

@@ -13,6 +13,17 @@
         text-align: center;
         padding: 14px;
         position: relative;
+        cursor: pointer;
+        transition: all .3s ease;
+        span {
+            margin: 17px 0 0;
+            display: inline-block;
+            font-size: 15px;
+        }
+        &:hover {
+            border: 1px solid #b24ddd !important;
+            transition: all .3s ease;
+        }
         .material-icons{
             display: none;
         }
@@ -37,7 +48,7 @@
         }
         img {
             width: 100%;
-            opacity: .6;
+            opacity: .4;
         }
     }
 }

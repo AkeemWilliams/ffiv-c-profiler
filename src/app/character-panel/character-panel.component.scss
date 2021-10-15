@@ -7,7 +7,7 @@ $light-purple: #fbf6ff;
     grid-template-rows: auto auto;
     max-width: 60em;
     /* width: 89em; */
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     margin: 0 auto;
 }
 
@@ -24,10 +24,10 @@ section.dashboard-search-area {
     align-items: center;
     // height: 100%;
     justify-content: center;
-    margin: 45px 0 0;
+    margin: 0 0 0;
     p {
         line-height: 2;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: 100;
         margin-bottom: 0;
         &.err-msg{
@@ -68,6 +68,7 @@ section.dashboard-search-area {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: end;
+    padding-bottom: 0;
     div:first-child {
         font-size: 24px;
         color: $purple;
@@ -86,17 +87,28 @@ section.user-progression {
     /* grid-area: left; */
     grid-row-start: 2;
     grid-column-start: 2;
+    h2 {
+        border-bottom: 1px solid #b24ddd;
+        margin: 0 0 25px;
+        padding: 0 0 8px;
+        animation-name:ea;
+        animation-duration:.2s;
+    }
 }
 
-.spin-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    background: rgb(0 0 0 / 50%);
+
+@keyframes ea{
+    from{width:0;}
+    to{width:100%}
+}
+
+section.char-section:before {
+    content: "";
+    height: 1px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
+    background:#ffffff44;
+    display: block;
+    margin: 0 auto;
+    animation-name:ea;
+    animation-duration:.2s;
 }
