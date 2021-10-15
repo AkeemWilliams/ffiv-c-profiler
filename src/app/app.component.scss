@@ -5,9 +5,29 @@ header{
 }
 nav{
     width: 100%;
+    box-sizing: border-box;
     text-align: center;
-    background: rgba(255,255,255,.5);
+    position: sticky;
+    box-shadow: 0 -1px 1px 0 rgb(255 255 255 / 20%);
+    top: 0;
+    background: rgb(123 31 162);
+    z-index: 1;
+
+    .mat-button {
+        border-radius: 0;
+        border-radius: 0;
+        margin: 0 10px;
+        padding: 8px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 400;
+            margin: 0 10px;
+    }
+    .mat-button.acive-link {
+        border-bottom: 2px solid;
+    }
+    .mat-button:hover {
+        border-bottom: 2px solid;
+    }
 }
-
-
 

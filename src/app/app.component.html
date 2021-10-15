@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <div class='logo'>
     <div>logo</div>
   </div>
@@ -7,16 +7,14 @@
     <img src="" alt="charcater name"/>
     <span class="profile-name">Lorem Ipsum</span>
   </div>
-</header>
+</header> -->
 <nav>
-  <nav>
-    <a mat-button routerLink="/home">Dashboard</a>
-    <a mat-button routerLink="/mounts">Mounts</a>
-    <a mat-button routerLink="/minions">Minions</a>
-  </nav>
+    <a mat-button routerLinkActive="acive-link" routerLink="/home">Dashboard</a>
+    <a *ngIf="showLink" mat-button routerLinkActive="acive-link" routerLink="/mounts">Mounts</a>
+    <a *ngIf="showLink" mat-button routerLinkActive="acive-link" routerLink="/minions">Minions</a>
 </nav>
 
-<router-outlet></router-outlet>
+<router-outlet (activate)="onValueChange($event)"></router-outlet>
 
 <!-- <app-character-panel *ngIf="characterID" [characterID]="characterID"></app-character-panel> -->
 

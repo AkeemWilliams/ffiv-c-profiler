@@ -1,17 +1,25 @@
-
-<section class=dashboard-search-area> 
-  <div class="search-inp"> 
-    <p>A helpful tool to track character progression in Final Fantasy XIV. Track Achievements, Mounts and Minion Collections. Be it from seasoned players to sprouts, this tool is made for all collectors. </p>
-
+<section class=dashboard-search-area>
+  <h1>FFXIV Character profiler</h1>
+  <div class="search-inp">
+    <p>A helpful tool to track collectibles in Final Fantasy XIV. Track Achievements, Mounts and Minion
+      Collections. Be it from seasoned players to sprouts, this tool is made for all collectors. </p>
     <mat-form-field class="char-search" appearance="fill">
       <mat-label>Character Url or ID</mat-label>
-      <input matInput type="text" placeholder="https://na.finalfantasyxiv.com/lodestone/character/1234567" [(ngModel)]="characterUrl">
+      <input matInput type="text" placeholder="https://na.finalfantasyxiv.com/lodestone/character/1234567"
+        [(ngModel)]="characterUrl">
     </mat-form-field>
-    <button mat-raised-button (click)="searchCharacter()" [ngClass]="characterUrl  ? 'btn-active' : '' " [disabled]="!characterUrl">Profile Character</button> 
+    <p class="err-msg" *ngIf="errorShow">Character not Found.</p>
+
+    <button mat-raised-button (click)="searchCharacter()" [ngClass]="characterUrl  ? 'btn-active' : '' "
+      [disabled]="!characterUrl">Profile Character</button>
 
   </div>
 </section>
 
+<div *ngIf="showSpinner" class="spin-overlay">
+  <mat-spinner></mat-spinner>
+
+</div>
 <div *ngIf="userData" class="character-sheet">
   <section class="char-name">
     <div>{{userData.name}}</div>
@@ -24,15 +32,21 @@
   </section>
 
   <section class="user-progression">
-  <div class="achievements-proper">achievements
-    <app-user-progress-bar [value]="userData.achievementCompletion" [bufferValue]="200"></app-user-progress-bar>
-  </div>
-  <div class="mounts-proper">mounts
-    <app-user-progress-bar [value]="userData.mountCompletion" [bufferValue]="200"></app-user-progress-bar>
-  </div>
-  <div class="minions-proper">minions
-    <app-user-progress-bar [value]="userData.minionCompletion" [bufferValue]="200"></app-user-progress-bar>
-  </div>
+    <div class="achievements-proper">
+      <h3>Achievements - {{userData.achievementCompletion}}%</h3>
+      <app-user-progress-bar [value]="userData.achievementCompletion" [bufferValue]="200"></app-user-progress-bar>
+      <span>{{userData.achievements.count}} of {{userData.achievements.total}} Completed </span>
+    </div>
+    <div class="mounts-proper">
+      <h3>Mounts - {{userData.mountCompletion}}%</h3>
+      <app-user-progress-bar [value]="userData.mountCompletion" [bufferValue]="200"></app-user-progress-bar>
+      <span>{{userData.mounts.count}} of {{userData.mounts.total}} Collected </span>
+    </div>
+    <div class="minions-proper">
+      <h3>Minions - {{userData.minionCompletion}}%</h3>
+      <app-user-progress-bar [value]="userData.minionCompletion" [bufferValue]="200"></app-user-progress-bar>
+      <span>{{userData.minions.count}} of {{userData.minions.total}} Collected </span>
+    </div>
   </section>
 
 

@@ -14,7 +14,18 @@ interface minions{
   query:{};
   results:[];
 };
-
+interface allCharData{
+  Achievements: {};
+  AchievementsPublic:boolean;
+  Character:{};
+  FreeCompany: null;
+  FreeCompanyMembers: null;
+  Friends: null;
+  FriendsPublic: null;
+  Minions:Array<any>;
+  Mounts:Array<any>;
+  PvPTeam:null;
+};
 @Injectable({
   providedIn: 'root'
 })
@@ -28,21 +39,17 @@ export class GetCharacterServiceService {
   options = {observe: 'body', responseType: 'json'}
 
   getCharacter(url:number):Observable<CharProgress[]>{
-    console.log('yo char');
     return this.http.get<CharProgress[]>(`https://ffxivcollect.com/api/characters/${url}`)
 
   }
-  getaAllCharacterInfo(url:number){
-    console.log('yo char');
-    return this.http.get<CharProgress[]>(`https://xivapi.com/character/${url}?data=AC,MIMO`)
+  getaAllCharacterInfo(url:number):Observable<allCharData>{
+    return this.http.get<allCharData>(`https://xivapi.com/character/${url}?data=AC,MIMO`)
 
   }
-  getMounts():Observable<mounts[]>{
-    console.log('yo mounts');
-    return this.http.get<mounts[]>(`https://ffxivcollect.com/api/mounts`)
+  getMounts():Observable<mounts>{
+    return this.http.get<mounts>(`https://ffxivcollect.com/api/mounts`)
   }
-  getMinions():Observable<minions[]>{
-    console.log('yo minions');
-    return this.http.get<minions[]>(`https://ffxivcollect.com/api/minions`)
+  getMinions():Observable<minions>{
+    return this.http.get<minions>(`https://ffxivcollect.com/api/minions`)
   }
 }

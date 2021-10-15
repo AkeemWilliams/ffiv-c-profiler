@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+
 
 /* Components Classes */
 import { AppComponent } from './app.component';
@@ -11,14 +13,17 @@ import { UserProgressBarComponent } from './user-progress-bar/user-progress-bar.
 import { CharacterMountsComponent } from './character-mounts/character-mounts.component';
 import { CharacterMinionsComponent } from './character-minions/character-minions.component';
 
+// Pipes
+import { SearchFilterPipe } from './search-filter.pipe';
+
 // Material Design
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
-import { AppRoutingModule } from './app-routing.module';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -28,7 +33,8 @@ import { AppRoutingModule } from './app-routing.module';
     CharacterPanelComponent,
     UserProgressBarComponent,
     CharacterMountsComponent,
-    CharacterMinionsComponent
+    CharacterMinionsComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -38,8 +44,10 @@ import { AppRoutingModule } from './app-routing.module';
     MatMenuModule,
     MatInputModule,
     MatButtonModule,
+    MatSelectModule,
     MatProgressBarModule,
     MatIconModule,
+    MatProgressSpinnerModule,
     AppRoutingModule
   ],
   exports:[

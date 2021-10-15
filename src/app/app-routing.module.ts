@@ -5,10 +5,11 @@ import { CharacterMinionsComponent } from './character-minions/character-minions
 import { CharacterPanelComponent } from './character-panel/character-panel.component';
 
 const routes: Routes = [
+ 
   {path:'home', component:CharacterPanelComponent},
   {path:'mounts', component:CharacterMountsComponent},
-  {path:'minions', component:CharacterMinionsComponent}
-
+  {path:'minions', component:CharacterMinionsComponent},
+  { path: '', redirectTo: '/home',  pathMatch: 'full' }
 ]
 
 @NgModule({
