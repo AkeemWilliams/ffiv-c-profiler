@@ -17,7 +17,6 @@ interface filterOp {
   styleUrls: ['./character-mounts.component.scss']
 })
 
-
 export class CharacterMountsComponent implements OnInit {
   userMountList!: Array<any>;
   mountList!:Array<any>;
@@ -101,7 +100,6 @@ export class CharacterMountsComponent implements OnInit {
   }
 
   itemClick(event: dialogDT){
-    console.log(event);
     this.selectedDetail = event;
      if(event.sources)
      this.selectedDetail.sauce = event.sources[0]

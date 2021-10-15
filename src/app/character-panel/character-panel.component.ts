@@ -73,7 +73,6 @@ export class CharacterPanelComponent implements OnInit {
 
       this.characterObj.emit(this.commonData)
       this.showSpinner = false;
-console.log(this);
       setTimeout(() => {
         window.scrollTo({top:document.body.scrollHeight + 100, behavior: 'smooth'})
       },300);
