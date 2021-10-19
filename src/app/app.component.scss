@@ -7,7 +7,7 @@ nav{
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    position: sticky;
+    position: fixed;
     box-shadow: 0 -1px 1px 0 rgb(255 255 255 / 20%);
     top: 0;
     background: rgb(123 31 162);
@@ -21,13 +21,51 @@ nav{
         letter-spacing: 1px;
         font-size: 16px;
         font-weight: 400;
-            margin: 0 10px;
+        margin: 0 10px;
+        position: relative;
+        overflow:hidden;
+            &:hover:after {
+                height: 3px;
+                content: "";
+                width: 100%;
+                background: #fff;
+                display: block;
+                opacity: 1;
+                transition: all .13s ease;
+                position:absolute;
+                bottom:0;
+                left: 0;
+            }
+            &:after {
+                height: 3px;
+                content: "";
+                width: 100%;
+                background: #fff;
+                display: block;
+                bottom: 0;
+                position: absolute;
+                opacity: 0;
+                transition: all .3s ease;
+                left: -300px;
+            }
+            &.acive-link {
+                border-bottom: 2px solid;
+                &:after {
+                    height: 3px;
+                    content: "";
+                    width: 100%;
+                    background: #fff;
+                    display: block;
+                    bottom: 0;
+                    position: absolute;
+                    opacity: 1;
+                    transition: all .3s ease;
+                    left: -300px;
+                }
+            }
     }
-    .mat-button.acive-link {
-        border-bottom: 2px solid;
-    }
-    .mat-button:hover {
-        border-bottom: 2px solid;
-    }
+
+
+
 }
 

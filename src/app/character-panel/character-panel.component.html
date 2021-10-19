@@ -1,5 +1,5 @@
 <section class=dashboard-search-area>
-  <h1>FFXIV Character profiler</h1>
+  <h1>FFXIV Character Profiler</h1>
   <div class="search-inp">
     <p>A helpful tool to track collectibles in Final Fantasy XIV. Track Achievements, Mounts and Minion
       Collections. Be it from seasoned players to sprouts, this tool is made for all collectors. </p>
@@ -18,36 +18,39 @@
 
 <div *ngIf="showSpinner" class="spin-overlay">
   <mat-spinner></mat-spinner>
-
 </div>
-<div *ngIf="userData" class="character-sheet">
-  <section class="char-name">
-    <div>{{userData.name}}</div>
-    <div>Server: {{userData.server}}</div>
-  </section>
-  <section class="character-proper">
-    <div class="char-portrait">
-      <img src="{{userData.portrait}}" alt="Character Portrait" />
-    </div>
-  </section>
+<section class="char-section" *ngIf="userData">
+  <div *ngIf="userData" class="character-sheet">
+    <section class="char-name">
+      <div>{{userData.Character.Name}}</div>
+      <div>Server: {{userData.Character.DC}} : {{userData.Character.server}}</div>
+    </section>
+    <section class="character-proper">
+      <div class="char-portrait">
+        <img src="{{userData.Character.Portrait}}" alt="Character Portrait" />
+      </div>
+    </section>
+  
+    <section class="user-progression">
+      <h2>Collections</h2>
+      <div class="achievements-proper">
+        <h3>Achievements - {{userData.achievementCompletion}}%</h3>
+        <app-user-progress-bar [value]="userData.achievementCompletion" [bufferValue]="200"></app-user-progress-bar>
+        <span>{{userData.achieveCount}} of {{userData.achievementDet.count}} Completed </span>
+      </div>
+      <div class="mounts-proper">
+        <h3>Mounts - {{userData.mountCompletion}}%</h3>
+        <app-user-progress-bar [value]="userData.mountCompletion" [bufferValue]="200"></app-user-progress-bar>
+        <span>{{userData.mountCount}} of {{userData.mountDet.count}} Collected </span>
+      </div>
+      <div class="minions-proper">
+        <h3>Minions - {{userData.minionCompletion}}%</h3>
+        <app-user-progress-bar [value]="userData.minionCompletion" [bufferValue]="200"></app-user-progress-bar>
+        <span>{{userData.minionCount}} of {{userData.minionDet.count}} Collected </span>
+      </div>
+    </section>
+  
+  
+  </div>
+</section>
 
-  <section class="user-progression">
-    <div class="achievements-proper">
-      <h3>Achievements - {{userData.achievementCompletion}}%</h3>
-      <app-user-progress-bar [value]="userData.achievementCompletion" [bufferValue]="200"></app-user-progress-bar>
-      <span>{{userData.achievements.count}} of {{userData.achievements.total}} Completed </span>
-    </div>
-    <div class="mounts-proper">
-      <h3>Mounts - {{userData.mountCompletion}}%</h3>
-      <app-user-progress-bar [value]="userData.mountCompletion" [bufferValue]="200"></app-user-progress-bar>
-      <span>{{userData.mounts.count}} of {{userData.mounts.total}} Collected </span>
-    </div>
-    <div class="minions-proper">
-      <h3>Minions - {{userData.minionCompletion}}%</h3>
-      <app-user-progress-bar [value]="userData.minionCompletion" [bufferValue]="200"></app-user-progress-bar>
-      <span>{{userData.minions.count}} of {{userData.minions.total}} Collected </span>
-    </div>
-  </section>
-
-
-</div>

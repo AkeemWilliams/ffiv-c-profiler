@@ -2,7 +2,8 @@ import {Component,OnInit, Output, EventEmitter} from '@angular/core';
 import {LocalStorageService} from '../local-storage.service';
 import { GetCharacterServiceService } from '../get-character-service.service';
 import { CommonServiceService } from '../common-service.service';
-import { BehaviorSubject,forkJoin, observable, Observable } from 'rxjs';
+import { forkJoin } from 'rxjs';
+import { AllCharacterData } from '../Interfaces/char-progress'
 
 
 @Component({
@@ -27,18 +28,20 @@ export class CharacterPanelComponent implements OnInit {
     private LocalStorageService: LocalStorageService, 
     private getChar:GetCharacterServiceService, private commonData:CommonServiceService) {}
 
-
-
     //search
     characterUrl?:string | number;
     characterID?:number;
-  // RxJS v6+
-   suber = new BehaviorSubject(0);
 
   ngOnInit(): void {
     if(this.userData){
+      setTimeout(() => {
+        window.scrollTo({top:document.body.scrollHeight + 100, behavior: 'smooth'})
+      },300);
       return this.userData;
     }else{
+      setTimeout(() => {
+        window.scrollTo({top:document.body.scrollHeight + 100, behavior: 'smooth'})
+      },300);
       return this.userData = this.commonData.characterData;
     }
   }
@@ -51,20 +54,33 @@ export class CharacterPanelComponent implements OnInit {
     this.showSpinner = true;
     this.characterUrl = "";
 
-    forkJoin([this.getChar.getCharacter(this.characterID),this.getChar.getaAllCharacterInfo(this.characterID)]).subscribe(([s,ps])=>{
+    forkJoin([
+      this.getChar.getaAllCharacterInfo(this.characterID), 
+      this.getChar.getMounts(),
+       this.getChar.getMinions(), 
+       this.getChar.getAchieves()]).subscribe(([s, mo, mi, ac])=>{
       this.userData = s;
-      this.userData.userMounts = ps.Mounts;
-      this.userData.userMinions = ps.Minions;
+      
+      this.userData.userMounts = s.Mounts;
+      this.userData.userMinions = s.Minions;
+      this.userData.mountCount = (this.userData.userMounts ? this.userData.userMounts.length : 0);
+      this.userData.minionCount = (this.userData.userMinions ? this.userData.userMinions.length : 0);
+      this.userData.achieveCount = (s.Achievements.List ? s.Achievements.List.length : 0);
+      this.userData.mountDet = mo;
+      this.userData.minionDet = mi;
+      this.userData.achievementDet = ac;
 
-
-      this.userData.mountCompletion = Math.round(this.userData.mounts.count/this.userData.mounts.total * 100);
-      this.userData.achievementCompletion = Math.round(this.userData.achievements.count/this.userData.achievements.total * 100);
-      this.userData.minionCompletion = Math.round(this.userData.minions.count/this.userData.minions.total * 100);
+        this.userData.mountCompletion = Math.round(this.userData.mountCount/mo.count * 100);
+        this.userData.achievementCompletion = Math.round(this.userData.achieveCount/ac.count * 100);
+        this.userData.minionCompletion = Math.round(this.userData.minionCount/mi.count * 100);
+      // this.userData.bardCompletion = Math.round(this.userData.mounts.count/this.userData.mounts.total * 100);
+      // this.userData.achievementCompletion = Math.round(this.userData.achievements.count/this.userData.achievements.total * 100);
+      // this.userData.minionCompletion = Math.round(this.userData.minions.count/this.userData.minions.total * 100);
       this.commonData.savedCharacterData(this.userData);
 
       this.characterObj.emit(this.commonData)
+      console.log(this.userData);
       this.showSpinner = false;
-
       setTimeout(() => {
         window.scrollTo({top:document.body.scrollHeight + 100, behavior: 'smooth'})
       },300);

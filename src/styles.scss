@@ -1,13 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; overflow: auto; }
+html, body { }
 h3{
     margin-bottom: 5px;
 }
 body { 
     background: #1f2736;
     color: #fff;
+    overflow: auto; 
     margin: 0;
+    padding: 55px 0 0 0;
      font-family: Roboto, "Helvetica Neue", sans-serif; 
      font-size: 14px;
     }
@@ -16,25 +18,147 @@ section{
     box-sizing: border-box;
     &.filter-area {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
+        flex-flow: row wrap;
         padding: 20px 20px 0;
-        border-bottom: 1px solid #ffffff2e;
-        & > * {
+        border-bottom: 1px solid #b24ddd;
+         & > div{
+            max-width: 80em;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;   
+             }
+        .page-name {
+            justify-self: flex-start;
+            align-self: flex-start;
+            float: left;
+            flex-grow: 1;
+            margin: 0;
+            h2 {
+                margin: 0 0 -5px;
+                display: inline-block;
+                border-bottom: 1px solid #d584f8;
+                padding: 0 0 3px 0px;
+                float: left;
+                font-size: 31px;
+                font-weight: 400;
+            }
+            span {
+                letter-spacing: 3px;
+                font-weight: 200;
+                color: #d684f9;
+                font-size: 18px;
+                float: left;
+                clear: both;
+            }
+        }
+        & > * > * {
+       
             margin: 0 0 0 18px;
         }
     }
-    
-
 }
+.items-collected {
+    width: 80em;
+    margin: 0 auto;
+    text-align: right;
+    box-sizing: border-box;
+    p {
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: .5px;
+        color: #fff;
+    }
+}
+
+.spin-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgb(0 0 0 / 50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.err-cont {
+    width: 30em;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 30px;
+    color: #ff3311;
+    text-align: center;
+}
+
+
+//mat overrides
+.mat-dialog-container{
+    padding: 0 !important;
+}
+
+.dia-wrap {
+    background-repeat: no-repeat !important;
+    background-size: auto 100% !important;
+    max-width: 50em;
+    background-position: right bottom !important;
+        .inner-wrap{
+            background: rgba(66, 66, 66, 0.8);
+            height: 100%;
+            width: 100%;
+            display: grid;
+            position: relative;
+            grid-template-columns: auto 70%;
+            grid-template-rows: auto auto auto;
+            grid-gap: 10px;
+            box-sizing: border-box;
+            padding: 24px;
+            h1 {
+                grid-row-start: 1;
+                grid-column-start: 1;
+                font-size: 40px;
+                grid-column-end: 3;
+                letter-spacing: 1.2px;
+                font-weight: bolder;
+                margin-top: 0;
+            }
+            img {
+                width: 100%;
+                min-width: 100px;
+            }
+            .enhanced-desc {
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.2px;
+                font-weight: 300;
+            }
+            .obtained-from {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                font-size: 16px;
+                font-weight: 500;
+                span {
+                    font-weight: 100;
+                }
+            }
+        }
+}
+
 button.btn-active{
     background: #7b1fa2;
 }
-//mat overrides
+
 .mat-progress-bar {
     height: 8px !important;
     border-radius: 10px;
 }
-
+input.mat-input-element {
+    margin-top: -0.0625em;
+    caret-color: auto;
+}
 .mat-progress-bar .mat-progress-bar-fill::after {
     border-radius: 10px;
 }
+

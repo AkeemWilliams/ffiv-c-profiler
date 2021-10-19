@@ -19,7 +19,6 @@ ngOnInit(){
   this.router.navigate(['/home'])
 }
   onValueChange(char: { characterObj: { subscribe: (arg0: (data: any) => void) => void; } | undefined; }){
-    console.log(char);
     if(char.characterObj != undefined){
       char.characterObj.subscribe((data:any)=>{
         this.showLink = true;

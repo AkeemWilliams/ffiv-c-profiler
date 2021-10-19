@@ -1,0 +1,17 @@
+<div class="dia-wrap" mat-dialog-content style="background:url({{data.image}})">
+
+  <div class="inner-wrap">
+    <h1 mat-dialog-title>{{data.name}}</h1>
+
+    <div class="mount-image">
+      <img src="{{data.image}}" />
+    </div>
+    <div class="enhanced-desc">
+      {{data.enhanced_description}}
+    </div>
+    <div class="obtained-from">
+      <p>Obtained From: <span>{{data.sources![0].text}}</span></p>
+    </div>
+  </div>
+
+</div>
