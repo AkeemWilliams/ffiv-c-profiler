@@ -1,23 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { CharProgress, AllCharacterData } from './Interfaces/char-progress';
-
+import { CheezyMints } from './Interfaces/achievements';
 import { Mounts } from './Interfaces/mountsint';
 import { Minions } from './Interfaces/minions-int'
 
-
-
-interface mounts{
-count: number;
-query:{};
-results:[];
-};
-interface minions{
-  count: number;
-  query:{};
-  results:[];
-};
 @Injectable({
   providedIn: 'root'
 })
@@ -30,12 +18,12 @@ export class GetCharacterServiceService {
 
   options = {observe: 'body', responseType: 'json'}
 
-  getCharacter(url:number):Observable<CharProgress[]>{
-    return this.http.get<CharProgress[]>(`https://ffxivcollect.com/api/characters/${url}`)
+   getAchieves():Observable<CheezyMints>{
+     return this.http.get<CheezyMints>(`https://ffxivcollect.com/api/achievements/`)
 
-  }
+   }
   getaAllCharacterInfo(url:number):Observable<AllCharacterData>{
-    return this.http.get<AllCharacterData>(`https://xivapi.com/character/${url}?data=AC,MIMO`)
+    return this.http.get<AllCharacterData>(`https://xivapi.com/character/${url}?data=AC,MIMO&extended=1`)
 
   }
   getMounts():Observable<Mounts>{

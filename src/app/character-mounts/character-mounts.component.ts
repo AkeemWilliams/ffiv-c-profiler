@@ -58,7 +58,6 @@ export class CharacterMountsComponent implements OnInit {
   ngOnInit(): void {
     this.showSpinner = true;
 
-    this.getMounts.getMounts().subscribe(res =>{
       this.errorShow = false;
 
       this.userMountList = this.comdata.characterData.userMounts;
@@ -67,7 +66,7 @@ export class CharacterMountsComponent implements OnInit {
         this.userMountList.sort((a, b) => (a.Name > b.Name ? 1 : -1));
       }
 
-      let resp: any[] | undefined | null = res.results;
+      let resp: any[] | undefined | null = this.comdata.characterData.mountDet.results;
       if(resp){
       resp.sort((a, b) => (a.name > b.name ? 1 : -1));
       resp.forEach((o1) =>{
@@ -89,14 +88,7 @@ export class CharacterMountsComponent implements OnInit {
       setTimeout(() => {
         this.showSpinner = false;
       });
-    },(error)=>{ 
-      console.log(error);
-      this.errorShow = true;
 
-      this.showSpinner = false;
-
-      return
-      })
   }
 
   itemClick(event: dialogDT){

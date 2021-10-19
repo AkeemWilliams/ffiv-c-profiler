@@ -45,7 +45,7 @@ export interface CharProgress{
     PvPTeam?: null;
   }
   export interface Achievements {
-    List?: (null)[] | null;
+    List?: (any)[] | null;
     Points: number;
   }
   export interface Character {
@@ -148,21 +148,21 @@ export interface CharProgress{
     46: number;
   }
   export interface Gear {
-    Body: BodyOrHandsOrHead;
+    Body: BodHandHead;
     Bracelets: GearAccessories;
     Earrings: GearAccessories;
-    Feet: FeetOrLegsOrMainHand;
-    Hands: BodyOrHandsOrHead;
-    Head: BodyOrHandsOrHead;
-    Legs: FeetOrLegsOrMainHand;
-    MainHand: FeetOrLegsOrMainHand;
+    Feet: FeetLegWepMain;
+    Hands: BodHandHead;
+    Head: BodHandHead;
+    Legs: FeetLegWepMain;
+    MainHand: FeetLegWepMain;
     Necklace: GearAccessories;
     Ring1: GearAccessories;
     Ring2: GearAccessories; 
     SoulCrystal: SoulCrystal;
     Waist: GearAccessories;
   }
-  export interface BodyOrHandsOrHead {
+  export interface BodHandHead {
     Creator?: null;
     Dye: number;
     ID: number;
@@ -176,7 +176,7 @@ export interface CharProgress{
     Materia?: (number)[] | null;
     Mirage?: null;
   }
-  export interface FeetOrLegsOrMainHand {
+  export interface FeetLegWepMain {
     Creator?: null;
     Dye?: null;
     ID: number;

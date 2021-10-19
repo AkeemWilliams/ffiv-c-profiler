@@ -63,14 +63,13 @@ export class CharacterMinionsComponent implements OnInit {
 
   ngOnInit(): void {
     this.showSpinner = true;
-    this.getMinions.getMinions().subscribe(res => {
       this.errorShow = false;
 
       this.userMinionsList = this.comdata.characterData.userMinions;
       if (this.userMinionsList != null) {
         this.userMinionsList.sort((a, b) => (a.Name > b.Name ? 1 : -1));
       }
-      let resp: any[] | undefined | null = res.results;
+      let resp: any[] | undefined | null = this.comdata.characterData.minionDet.results;
       if (resp) {
         resp.sort((a, b) => (a.name > b.name ? 1 : -1));
         if (this.userMinionsList != null) {
@@ -93,13 +92,7 @@ export class CharacterMinionsComponent implements OnInit {
         this.showSpinner = false;
 
       });
-    }, (error) => {
-      console.log(error);
-      this.errorShow = true;
-      this.showSpinner = false;
-
-      return
-    })
+  
   }
 
   itemClick(event: dialogDT) {
