@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { CharProgress, AllCharacterData } from './Interfaces/char-progress';
 import { CheezyMints } from './Interfaces/achievements';
 import { Mounts } from './Interfaces/mountsint';
-import { Minions } from './Interfaces/minions-int'
+import { Minions } from './Interfaces/minions-int';
 
 @Injectable({
   providedIn: 'root'

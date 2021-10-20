@@ -10,6 +10,7 @@
       {{data.enhanced_description}}
     </div>
     <div class="obtained-from">
+      <div *ngFor="let b of data.sources!">{{b.text}}}</div>
       <p>Obtained From: <span>{{data.sources![0].text}}</span></p>
     </div>
   </div>
