@@ -23,9 +23,9 @@
     </section>
     <section>
         <div class="err-cont" *ngIf="errorShow">{{errMsg}}</div>
-        <div class="items-collected"><p>{{comdata.characterData.mountCount}} of {{comdata.characterData.mountDet.count}} obtained</p></div>
+        <div class="items-collected"><p>{{cdata!.mountCount}} of {{cdata!.mountDet.count}} obtained</p></div>
         <div class="mount-container" >
-            <ng-container *ngFor="let mount of finalMountList | searchFilter : mountNames">
+            <ng-container *ngFor="let mount of mountDetails | searchFilter : mountNames">
                 <div (click)="itemClick(mount)" class="mount-box" [ngClass]="mount.isOwned ? 'owned' : ''" >
                     <img src="{{mount.image}}" />
                     <span>{{mount.name}}</span>

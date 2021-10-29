@@ -5,7 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
-
+import { environment } from '../environments/environment'; // Angular CLI environment
+//ngrx
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { CharacterPanelEffects } from './store/character-panel.effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 /* Components Classes */
 import { AppComponent } from './app.component';
@@ -26,8 +31,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
-
-
+import { characterPanelReducer } from './store/character-profiler.reducer';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,14 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatProgressBarModule,
     MatIconModule,
     MatProgressSpinnerModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({cprofile : characterPanelReducer}),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+      autoPause: true, // Pauses recording actions and state changes when the extension window is not open
+    }),
+    EffectsModule.forRoot([CharacterPanelEffects])
   ],
   exports:[
     

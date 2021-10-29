@@ -3,6 +3,11 @@ import { CommonServiceService } from '../common-service.service';
 import { GetCharacterServiceService } from '../get-character-service.service';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { dialogDT } from '../Interfaces/dialog-int'
+import { Store } from '@ngrx/store';
+import { charPanelState } from '../store/character-panel.state';
+import * as cselect from '../store/character-profile.selector';
+import { AllCharacterData } from '../Interfaces/char-progress';
+
 
 export interface DialogData {
   animal: 'panda' | 'unicorn' | 'lion';
@@ -18,9 +23,8 @@ interface filterOp {
 })
 
 export class CharacterMountsComponent implements OnInit {
-  userMountList!: Array<any>;
   mountList!:Array<any>;
-  finalMountList!: Array<any>;
+  mountDetails: any ;
   selectedval: string = 'all';
   mountNames: string = "";
   showSpinner: boolean = false;
@@ -52,52 +56,27 @@ export class CharacterMountsComponent implements OnInit {
     {value: 'collected', viewValue: 'Collected'},
     {value: 'uncollected', viewValue: 'Uncollected'}
   ];
+  cdata!:AllCharacterData | null;
+  userMountList: { Icon: string; Name: string; }[] | undefined;
 
-  constructor(public comdata:CommonServiceService, public dialog:MatDialog, private getMounts:GetCharacterServiceService) { }
+
+
+  constructor(public comdata:CommonServiceService, private store:Store<charPanelState>, public dialog:MatDialog, private getMounts:GetCharacterServiceService) { }
 
   ngOnInit(): void {
-    this.showSpinner = true;
-
-      this.errorShow = false;
-
-      this.userMountList = this.comdata.characterData.userMounts;
-
-      if(this.userMountList != null){
-        this.userMountList.sort((a, b) => (a.Name > b.Name ? 1 : -1));
-      }
-
-      let resp: any[] | undefined | null = this.comdata.characterData.mountDet.results;
-      if(resp){
-      resp.sort((a, b) => (a.name > b.name ? 1 : -1));
-      resp.forEach((o1) =>{
- 
-        if(this.userMountList != null){
-
-        this.userMountList.filter(o2 => {
-          if(o1.name.toLowerCase() === o2.Name.toLowerCase()){
-            o1.isOwned= true;
-          }
+    this.store.select(cselect.giveCProfile).subscribe(async (v)=>{
+      this.cdata = v;
+        this.userMountList = v?.Mounts;
+        this.mountDetails = v?.mountDet.results;
         })
-      }
-      })
-    }
-      if(resp)
-      this.finalMountList = resp;
-
-            
-      setTimeout(() => {
-        this.showSpinner = false;
-      });
 
   }
 
   itemClick(event: dialogDT){
     this.selectedDetail = event;
-     if(event.sources)
-     this.selectedDetail.sauce = event.sources[0]
     this.dialog.open(DialogContent, {
       data: this.selectedDetail
-      
+
     });
   }
 
@@ -128,8 +107,6 @@ export class CharacterMountsComponent implements OnInit {
         collectedMounts.forEach((cmount)=>{
           (cmount as HTMLElement).classList.add("hidden");
         });
-
-
         break;
   }
   }

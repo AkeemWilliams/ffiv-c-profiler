@@ -19,13 +19,13 @@ export interface CharProgress{
     fashions: MountsMinsOther;
     records: MountsMinsOther;
   }
-  export interface Achievements {
-    count: number;
-    total: number;
-    points: number;
-    points_total: number;
-    public: boolean;
-  }
+  // export interface Achievements {
+  //   count: number;
+  //   total: number;
+  //   points: number;
+  //   points_total: number;
+  //   public: boolean;
+  // }
   export interface MountsMinsOther {
     count: number;
     total: number;
@@ -40,9 +40,21 @@ export interface CharProgress{
     FreeCompanyMembers?: null;
     Friends?: null;
     FriendsPublic?: null;
-    Minions?: (MinionsSubIntOrMountsSubInt)[] | null;
-    Mounts?: (MinionsSubIntOrMountsSubInt)[] | null;
+    Minions: ({Icon:string, Name:string})[];
+    Mounts: ({Icon:string, Name:string})[];
     PvPTeam?: null;
+    achieveCount: number;
+    achievementCompletion: number;
+    achievementDet: {query: {} | null, count: number, results:[]};
+    minionCompletion: number;
+    minionCount: number;
+    minionDet: {query: {} | null, count: number, results:(mountdet)[];};
+    mountCompletion: number;
+    mountCount: number;
+    mountDet: {  query: {} | null, count: number, results:(mountdet)[];}
+
+    userMinions: ({Icon:string, Name:string})[] | null;
+    userMounts:({Icon:string, Name:string})[] | null;
   }
   export interface Achievements {
     List?: (any)[] | null;
@@ -126,27 +138,7 @@ export interface CharProgress{
     JobID: number;
     Level: number;
   }
-  export interface Attributes {
-    1: number;
-    2: number;
-    3: number;
-    4: number;
-    5: number;
-    6: number;
-    7: number;
-    8: number;
-    19: number;
-    20: number;
-    21: number;
-    22: number;
-    24: number;
-    27: number;
-    33: number;
-    34: number;
-    44: number;
-    45: number;
-    46: number;
-  }
+  export type Attributes = Record<number, number>
   export interface Gear {
     Body: BodHandHead;
     Bracelets: GearAccessories;
@@ -200,5 +192,22 @@ export interface CharProgress{
   }
   
 
-  
+  export interface mountdet {
+      description: string; 
+      enhanced_description: string; 
+      icon: string; 
+      id: number; 
+      image: string; 
+      item_id: null; 
+      movement: string; 
+      name: string; 
+      order: number; 
+      order_group: number; 
+      owned: string; 
+      patch: string; 
+      seats: number; 
+      sources: [{ type: string; text: string; related_type: string; related_id: number; }]; 
+      tooltip: string; 
+      isOwned: boolean;
+  }
   

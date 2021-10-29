@@ -3,6 +3,11 @@ import { CommonServiceService } from '../common-service.service';
 import { GetCharacterServiceService } from '../get-character-service.service';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { dialogDT } from '../Interfaces/dialog-int'
+import { Store } from '@ngrx/store';
+import { charPanelState } from '../store/character-panel.state';
+import * as cselect from '../store/character-profile.selector';
+import { AllCharacterData } from '../Interfaces/char-progress';
+
 interface filterOp {
   value: string;
   viewValue: string;
@@ -14,9 +19,8 @@ interface filterOp {
 })
 
 export class CharacterMinionsComponent implements OnInit {
-
-  userMinionsList!: Array < any > ;
   minionList!: Array < any > ;
+  minionDetails:any;
   finalMinionList!: Array < any > ;
   selectedval: string = 'all';
   minNames: string = "";
@@ -44,7 +48,6 @@ export class CharacterMinionsComponent implements OnInit {
     sauce: undefined
   };
 
-
   filterOptions: filterOp[] = [{
       value: 'all',
       viewValue: 'All'
@@ -59,47 +62,22 @@ export class CharacterMinionsComponent implements OnInit {
     }
   ];
 
-  constructor(public comdata: CommonServiceService, public dialog: MatDialog, private getMinions: GetCharacterServiceService) {}
+  cdata!:AllCharacterData | null;
+  userMinionsList: { Icon: string; Name: string; }[] | undefined;
+
+  constructor(public comdata: CommonServiceService, public dialog: MatDialog, private store:Store<charPanelState>) {}
 
   ngOnInit(): void {
-    this.showSpinner = true;
-      this.errorShow = false;
-
-      this.userMinionsList = this.comdata.characterData.userMinions;
-      if (this.userMinionsList != null) {
-        this.userMinionsList.sort((a, b) => (a.Name > b.Name ? 1 : -1));
-      }
-      let resp: any[] | undefined | null = this.comdata.characterData.minionDet.results;
-      if (resp) {
-        resp.sort((a, b) => (a.name > b.name ? 1 : -1));
-        if (this.userMinionsList != null) {
-
-          resp.forEach(o1 => {
-
-            this.userMinionsList.filter(o2 => {
-              if (o1.name.toLowerCase() === o2.Name.toLowerCase()) {
-                o1.isOwned = true;
-              }
-            })
-
-          })
-        }
-      }
-      if (resp)
-        this.finalMinionList = resp;
-
-      setTimeout(() => {
-        this.showSpinner = false;
-
-      });
-  
+    this.store.select(cselect.giveCProfile).subscribe(async (v)=>{
+      this.cdata = v;
+        this.userMinionsList = v?.Minions;
+        this.minionDetails = v?.minionDet.results;
+        })
   }
 
   itemClick(event: dialogDT) {
     (event);
     this.selectedDetail = event;
-    if (event.sources)
-      this.selectedDetail.sauce = event.sources[0]
     this.dialog.open(DialogContent, {
       data: this.selectedDetail
 

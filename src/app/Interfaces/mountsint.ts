@@ -1,9 +1,7 @@
-export interface Mounts {
-    query: Query;
-    count: number;
-    results?: (ResultsSubInt)[] | null;
-  }
-  export interface Query {
+import { AllCharacterData } from "./char-progress";
+
+export type Mounts = AllCharacterData["mountDet"]
+  export interface Queryint {
   }
   export interface ResultsSubInt {
     id: number;

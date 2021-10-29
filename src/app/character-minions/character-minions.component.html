@@ -29,12 +29,12 @@
         <div class="err-cont" *ngIf="errorShow">{{errMsg}}</div>
         <div *ngIf="!errorShow" class="items-collected">
             <p>
-                {{comdata.characterData.minionCount}} of {{comdata.characterData.minionDet.count}} obtained.
+                {{cdata!.minionCount}} of {{cdata!.minionDet.count}} obtained.
             </p>
         </div>
 
         <div class="minion-container">
-            <ng-container *ngFor="let minion of finalMinionList | searchFilter : minNames">
+            <ng-container *ngFor="let minion of minionDetails | searchFilter : minNames">
                 <div class="minion-box" (click)="itemClick(minion)" [ngClass]="minion.isOwned ? 'owned' : ''" >
                     <img src="{{minion.image}}" />
                     <span>{{minion.name}}</span></div>
