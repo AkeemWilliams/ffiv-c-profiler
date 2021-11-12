@@ -4,7 +4,7 @@ import { GetCharacterServiceService } from '../get-character-service.service';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { dialogDT } from '../Interfaces/dialog-int'
 import { Store } from '@ngrx/store';
-import { charPanelState } from '../store/character-panel.state';
+import { charPanelState } from '../character-panel/character-panel.state';
 import * as cselect from '../store/character-profile.selector';
 import { AllCharacterData } from '../Interfaces/char-progress';
 

@@ -1,7 +1,7 @@
 import { createReducer, on } from "@ngrx/store";
-import { getCharError, getChars, getCharSuccess } from './character-profiler.actions'
+import { getCharError, getChars, getCharSuccess } from './character-panel.actions'
 import { AllCharacterData, Character, Achievements } from '../Interfaces/char-progress'
-import { initialState } from '../character-panel/character-panel.state';
+import { initialState } from './character-panel.state';
 
 export const characterPanelReducer = createReducer(
     initialState,

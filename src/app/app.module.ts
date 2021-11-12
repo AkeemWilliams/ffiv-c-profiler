@@ -9,18 +9,20 @@ import { environment } from '../environments/environment'; // Angular CLI enviro
 //ngrx
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { CharacterPanelEffects } from './store/character-panel.effects';
+import { CharacterPanelEffects } from './character-panel/character-panel.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 /* Components Classes */
 import { AppComponent } from './app.component';
-import { CharacterPanelComponent } from './character-panel/character-panel.component';
+// import { CharacterPanelComponent } from './character-panel/character-panel.component';
 import { UserProgressBarComponent } from './user-progress-bar/user-progress-bar.component';
 import { CharacterMountsComponent } from './character-mounts/character-mounts.component';
 import { CharacterMinionsComponent } from './character-minions/character-minions.component';
-
+import { CharacterMountsModule } from './character-mounts/character-mounts.module';
+import { CharacterPanelModule } from './character-panel/character-panel.module'
 // Pipes
-import { SearchFilterPipe } from './search-filter.pipe';
+import { SearchFilterPipe } from './pipes/search-filter/search-filter.pipe';
+import { SearchFilterModule } from './pipes/search-filter/search-filter.module';
 
 // Material Design
 import {MatProgressBarModule} from '@angular/material/progress-bar';
@@ -36,15 +38,13 @@ import { characterPanelReducer } from './store/character-profiler.reducer';
 @NgModule({
   declarations: [
     AppComponent,
-    CharacterPanelComponent,
-    UserProgressBarComponent,
-    CharacterMountsComponent,
     CharacterMinionsComponent,
-    SearchFilterPipe
   ],
   imports: [
     CommonModule,
     BrowserModule,
+    CharacterPanelModule,
+    CharacterMountsModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
@@ -57,13 +57,14 @@ import { characterPanelReducer } from './store/character-profiler.reducer';
     MatIconModule,
     MatProgressSpinnerModule,
     AppRoutingModule,
-    StoreModule.forRoot({cprofile : characterPanelReducer}),
+    SearchFilterModule,
+    StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
       autoPause: true, // Pauses recording actions and state changes when the extension window is not open
     }),
-    EffectsModule.forRoot([CharacterPanelEffects])
+    EffectsModule.forRoot()
   ],
   exports:[
     

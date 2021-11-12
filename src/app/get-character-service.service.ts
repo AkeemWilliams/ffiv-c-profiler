@@ -23,8 +23,15 @@ export class GetCharacterServiceService {
      return this.http.get<AllCharacterData["achievementDet"]>(`https://ffxivcollect.com/api/achievements/`)
    }
   getaAllCharacterInfo(url:number):Observable<AllCharacterData>{
-    return this.http.get<AllCharacterData>(`https://xivapi.com/character/${url}?data=AC,MIMO&extended=1`)
+    return this.http.get<AllCharacterData>(`https://xivapi.com/character/${url}?data=MIMO&extended=1`)
 
+  }
+  getMockInfo():Observable<AllCharacterData>{
+    return this.http.get<AllCharacterData>('http://localhost:3000/sample')
+
+  }
+  getstatus(){
+    return this.http.get('http://localhost:3000/status')
   }
   getMounts():Observable<AllCharacterData["mountDet"]>{
     return this.http.get<AllCharacterData["mountDet"]>(`https://ffxivcollect.com/api/mounts`).pipe(
@@ -37,3 +44,7 @@ export class GetCharacterServiceService {
     return this.http.get<AllCharacterData["mountDet"]>(`https://ffxivcollect.com/api/minions`)
   }
 }
+
+
+
+

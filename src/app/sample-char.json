@@ -1,0 +1,2483 @@
+{
+  "Achievements": {
+    "List": [{
+      "Date": 1626534284,
+      "ID": 1,
+      "Icon": "/i/002000/002565.png",
+      "Name": "To Crush Your Enemies I",
+      "Points": 5
+    }, {
+      "Date": 1627165824,
+      "ID": 2,
+      "Icon": "/i/002000/002565.png",
+      "Name": "To Crush Your Enemies II",
+      "Points": 5
+    }, {
+      "Date": 1627453339,
+      "ID": 3,
+      "Icon": "/i/002000/002565.png",
+      "Name": "To Crush Your Enemies III",
+      "Points": 10
+    }, {
+      "Date": 1629071121,
+      "ID": 4,
+      "Icon": "/i/002000/002565.png",
+      "Name": "To Crush Your Enemies IV",
+      "Points": 10
+    }, {
+      "Date": 1631684135,
+      "ID": 5,
+      "Icon": "/i/002000/002565.png",
+      "Name": "To Crush Your Enemies V",
+      "Points": 10
+    }, {
+      "Date": 1628579122,
+      "ID": 795,
+      "Icon": "/i/002000/002629.png",
+      "Name": "On the Ropes",
+      "Points": 10
+    }, {
+      "Date": 1630466458,
+      "ID": 798,
+      "Icon": "/i/002000/002629.png",
+      "Name": "Blood, Sweat, and Blood",
+      "Points": 10
+    }, {
+      "Date": 1630305141,
+      "ID": 799,
+      "Icon": "/i/002000/002629.png",
+      "Name": "Ring of Fire",
+      "Points": 10
+    }, {
+      "Date": 1628089381,
+      "ID": 800,
+      "Icon": "/i/002000/002629.png",
+      "Name": "Boughbury Burning",
+      "Points": 10
+    }, {
+      "Date": 1628053149,
+      "ID": 802,
+      "Icon": "/i/002000/002629.png",
+      "Name": "Old Maid",
+      "Points": 10
+    }, {
+      "Date": 1626620582,
+      "ID": 803,
+      "Icon": "/i/003000/003126.png",
+      "Name": "Date with Destiny I",
+      "Points": 5
+    }, {
+      "Date": 1628654684,
+      "ID": 804,
+      "Icon": "/i/003000/003126.png",
+      "Name": "Date with Destiny II",
+      "Points": 5
+    }, {
+      "Date": 1627934365,
+      "ID": 808,
+      "Icon": "/i/026000/026012.png",
+      "Name": "Bosom Buddies I",
+      "Points": 5
+    }, {
+      "Date": 1628904288,
+      "ID": 809,
+      "Icon": "/i/026000/026012.png",
+      "Name": "Bosom Buddies II",
+      "Points": 10
+    }, {
+      "Date": 1628002968,
+      "ID": 739,
+      "Icon": "/i/000000/000801.png",
+      "Name": "To the Dungeons I",
+      "Points": 5
+    }, {
+      "Date": 1628473571,
+      "ID": 740,
+      "Icon": "/i/000000/000801.png",
+      "Name": "To the Dungeons II",
+      "Points": 10
+    }, {
+      "Date": 1629471755,
+      "ID": 741,
+      "Icon": "/i/000000/000801.png",
+      "Name": "To the Dungeons III",
+      "Points": 20
+    }, {
+      "Date": 1630478740,
+      "ID": 1222,
+      "Icon": "/i/000000/000801.png",
+      "Name": "To the Dungeons IV",
+      "Points": 20
+    }, {
+      "Date": 1631388435,
+      "ID": 1223,
+      "Icon": "/i/000000/000801.png",
+      "Name": "To the Dungeons V",
+      "Points": 20
+    }, {
+      "Date": 1632468882,
+      "ID": 1224,
+      "Icon": "/i/000000/000801.png",
+      "Name": "To the Dungeons VI",
+      "Points": 20
+    }, {
+      "Date": 1628262202,
+      "ID": 742,
+      "Icon": "/i/000000/000151.png",
+      "Name": "Dungeon Siege I",
+      "Points": 5
+    }, {
+      "Date": 1629268285,
+      "ID": 743,
+      "Icon": "/i/000000/000151.png",
+      "Name": "Dungeon Siege II",
+      "Points": 5
+    }, {
+      "Date": 1633232823,
+      "ID": 744,
+      "Icon": "/i/000000/000151.png",
+      "Name": "Dungeon Siege III",
+      "Points": 5
+    }, {
+      "Date": 1628953380,
+      "ID": 1576,
+      "Icon": "/i/003000/003284.png",
+      "Name": "In Too Deep I",
+      "Points": 5
+    }, {
+      "Date": 1629071121,
+      "ID": 1577,
+      "Icon": "/i/003000/003284.png",
+      "Name": "In Too Deep II",
+      "Points": 5
+    }, {
+      "Date": 1629136955,
+      "ID": 1578,
+      "Icon": "/i/003000/003284.png",
+      "Name": "In Too Deep III",
+      "Points": 5
+    }, {
+      "Date": 1629954996,
+      "ID": 1579,
+      "Icon": "/i/003000/003284.png",
+      "Name": "In Too Deep IV",
+      "Points": 5
+    }, {
+      "Date": 1629962898,
+      "ID": 1580,
+      "Icon": "/i/003000/003284.png",
+      "Name": "In Too Deep V",
+      "Points": 10
+    }, {
+      "Date": 1632080726,
+      "ID": 1659,
+      "Icon": "/i/003000/003321.png",
+      "Name": "Pal-less Palace I",
+      "Points": 10
+    }, {
+      "Date": 1628959388,
+      "ID": 1661,
+      "Icon": "/i/060000/060035.png",
+      "Name": "For the Hoard I",
+      "Points": 5
+    }, {
+      "Date": 1628962963,
+      "ID": 1665,
+      "Icon": "/i/060000/060035.png",
+      "Name": "The Trouble with Buried I",
+      "Points": 10
+    }, {
+      "Date": 1633405623,
+      "ID": 855,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Going Up in Flames",
+      "Points": 10
+    }, {
+      "Date": 1632468882,
+      "ID": 856,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Gone with the Wind",
+      "Points": 10
+    }, {
+      "Date": 1632719016,
+      "ID": 857,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Earth to Earth",
+      "Points": 10
+    }, {
+      "Date": 1632468882,
+      "ID": 893,
+      "Icon": "/i/000000/000317.png",
+      "Name": "I Eat Whorls for Breakfast",
+      "Points": 10
+    }, {
+      "Date": 1633405623,
+      "ID": 894,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Good Kingslayer",
+      "Points": 10
+    }, {
+      "Date": 1632468882,
+      "ID": 994,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Contempt of Court",
+      "Points": 10
+    }, {
+      "Date": 1632373416,
+      "ID": 1045,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Let It Go",
+      "Points": 10
+    }, {
+      "Date": 1632348295,
+      "ID": 1064,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Missed the Cut",
+      "Points": 10
+    }, {
+      "Date": 1630478740,
+      "ID": 1067,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Secret Ascian Man",
+      "Points": 10
+    }, {
+      "Date": 1630519250,
+      "ID": 1065,
+      "Icon": "/i/000000/000317.png",
+      "Name": "Broken Bridges",
+      "Points": 10
+    }, {
+      "Date": 1632198741,
+      "ID": 747,
+      "Icon": "/i/002000/002682.png",
+      "Name": "The Binds That Tie I",
+      "Points": 5
+    }, {
+      "Date": 1630642262,
+      "ID": 883,
+      "Icon": "/i/002000/002697.png",
+      "Name": "You Call That a Labyrinth",
+      "Points": 10
+    }, {
+      "Date": 1630642262,
+      "ID": 995,
+      "Icon": "/i/002000/002697.png",
+      "Name": "Life Is a Syrcus",
+      "Points": 10
+    }, {
+      "Date": 1630681359,
+      "ID": 1068,
+      "Icon": "/i/002000/002697.png",
+      "Name": "Let the Sun Shine In",
+      "Points": 20
+    }, {
+      "Date": 1634465299,
+      "ID": 1399,
+      "Icon": "/i/002000/002667.png",
+      "Name": "Touching the Void",
+      "Points": 10
+    }, {
+      "Date": 1635867066,
+      "ID": 979,
+      "Icon": "/i/002000/002717.png",
+      "Name": "Bring Your B Game I",
+      "Points": 5
+    }, {
+      "Date": 1629180989,
+      "ID": 833,
+      "Icon": "/i/062000/062952.png",
+      "Name": "Cutting Your Wolf Loose: Twin Adder I",
+      "Points": 5
+    }, {
+      "Date": 1632373416,
+      "ID": 834,
+      "Icon": "/i/062000/062952.png",
+      "Name": "Cutting Your Wolf Loose: Twin Adder II",
+      "Points": 5
+    }, {
+      "Date": 1629180989,
+      "ID": 930,
+      "Icon": "/i/000000/000259.png",
+      "Name": "Walk the Line I",
+      "Points": 5
+    }, {
+      "Date": 1629180989,
+      "ID": 1073,
+      "Icon": "/i/002000/002555.png",
+      "Name": "Slaughterhouse One",
+      "Points": 5
+    }, {
+      "Date": 1628146364,
+      "ID": 647,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Middle La Noscea",
+      "Points": 10
+    }, {
+      "Date": 1628262202,
+      "ID": 648,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Lower La Noscea",
+      "Points": 10
+    }, {
+      "Date": 1628300032,
+      "ID": 649,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Eastern La Noscea",
+      "Points": 10
+    }, {
+      "Date": 1627143282,
+      "ID": 650,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Western La Noscea",
+      "Points": 10
+    }, {
+      "Date": 1627770143,
+      "ID": 651,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Upper La Noscea",
+      "Points": 10
+    }, {
+      "Date": 1628053149,
+      "ID": 677,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Outer La Noscea",
+      "Points": 10
+    }, {
+      "Date": 1626534284,
+      "ID": 657,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Central Shroud",
+      "Points": 10
+    }, {
+      "Date": 1626620582,
+      "ID": 658,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: East Shroud",
+      "Points": 10
+    }, {
+      "Date": 1627743724,
+      "ID": 659,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: South Shroud",
+      "Points": 10
+    }, {
+      "Date": 1626534284,
+      "ID": 660,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: North Shroud",
+      "Points": 10
+    }, {
+      "Date": 1626852945,
+      "ID": 652,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Western Thanalan",
+      "Points": 10
+    }, {
+      "Date": 1626852945,
+      "ID": 653,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Central Thanalan",
+      "Points": 10
+    }, {
+      "Date": 1627225373,
+      "ID": 654,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Eastern Thanalan",
+      "Points": 10
+    }, {
+      "Date": 1627830173,
+      "ID": 655,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Southern Thanalan",
+      "Points": 10
+    }, {
+      "Date": 1627770143,
+      "ID": 656,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Northern Thanalan",
+      "Points": 10
+    }, {
+      "Date": 1628348590,
+      "ID": 661,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Coerthas Central Highlands",
+      "Points": 10
+    }, {
+      "Date": 1631140040,
+      "ID": 1202,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Coerthas Western Highlands",
+      "Points": 10
+    }, {
+      "Date": 1628748669,
+      "ID": 662,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Mor Dhona",
+      "Points": 10
+    }, {
+      "Date": 1634440343,
+      "ID": 1206,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Sea of Clouds",
+      "Points": 10
+    }, {
+      "Date": 1627242623,
+      "ID": 663,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Sastasha",
+      "Points": 10
+    }, {
+      "Date": 1627367986,
+      "ID": 669,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Tam-Tara Deepcroft",
+      "Points": 10
+    }, {
+      "Date": 1627453339,
+      "ID": 666,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Copperbell Mines",
+      "Points": 10
+    }, {
+      "Date": 1628002968,
+      "ID": 667,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Halatali",
+      "Points": 10
+    }, {
+      "Date": 1628089381,
+      "ID": 673,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Thousand Maws of Toto-Rak",
+      "Points": 10
+    }, {
+      "Date": 1629520543,
+      "ID": 670,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Haukke Manor",
+      "Points": 10
+    }, {
+      "Date": 1628304673,
+      "ID": 664,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Brayflox's Longstop",
+      "Points": 10
+    }, {
+      "Date": 1629039779,
+      "ID": 668,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Sunken Temple of Qarn",
+      "Points": 10
+    }, {
+      "Date": 1630037656,
+      "ID": 674,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Cutter's Cry",
+      "Points": 10
+    }, {
+      "Date": 1628607716,
+      "ID": 672,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Stone Vigil",
+      "Points": 10
+    }, {
+      "Date": 1629510852,
+      "ID": 676,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Aurum Vale",
+      "Points": 10
+    }, {
+      "Date": 1630767851,
+      "ID": 665,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Wanderer's Palace",
+      "Points": 10
+    }, {
+      "Date": 1628909043,
+      "ID": 678,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Castrum Meridianum",
+      "Points": 10
+    }, {
+      "Date": 1628915602,
+      "ID": 679,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Praetorium",
+      "Points": 10
+    }, {
+      "Date": 1630562695,
+      "ID": 671,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Amdapor Keep",
+      "Points": 10
+    }, {
+      "Date": 1630815286,
+      "ID": 873,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Pharos Sirius",
+      "Points": 10
+    }, {
+      "Date": 1630305141,
+      "ID": 871,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Remapping the Realm: Copperbell Mines",
+      "Points": 10
+    }, {
+      "Date": 1631237802,
+      "ID": 897,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Lost City of Amdapor",
+      "Points": 10
+    }, {
+      "Date": 1633580981,
+      "ID": 993,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Hullbreaker Isle",
+      "Points": 10
+    }, {
+      "Date": 1630422167,
+      "ID": 991,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Remapping the Realm: Tam-Tara Deepcroft",
+      "Points": 10
+    }, {
+      "Date": 1630381011,
+      "ID": 1039,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Snowcloak",
+      "Points": 10
+    }, {
+      "Date": 1629556079,
+      "ID": 1038,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Remapping the Realm: Sastasha",
+      "Points": 10
+    }, {
+      "Date": 1632468882,
+      "ID": 1037,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Remapping the Realm: Sunken Temple of Qarn",
+      "Points": 10
+    }, {
+      "Date": 1630478740,
+      "ID": 1072,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Keeper of the Lake",
+      "Points": 10
+    }, {
+      "Date": 1633405623,
+      "ID": 1071,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Remapping the Realm: The Wanderer's Palace",
+      "Points": 10
+    }, {
+      "Date": 1632498641,
+      "ID": 1070,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Remapping the Realm: Amdapor Keep",
+      "Points": 10
+    }, {
+      "Date": 1631083635,
+      "ID": 1208,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Dusk Vigil",
+      "Points": 10
+    }, {
+      "Date": 1631286120,
+      "ID": 1209,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Sohm Al",
+      "Points": 10
+    }, {
+      "Date": 1631388435,
+      "ID": 1210,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Aery",
+      "Points": 10
+    }, {
+      "Date": 1631483707,
+      "ID": 1211,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Vault",
+      "Points": 10
+    }, {
+      "Date": 1632280041,
+      "ID": 1212,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Great Gubal Library",
+      "Points": 10
+    }, {
+      "Date": 1632432083,
+      "ID": 1213,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Aetherochemical Research Facility",
+      "Points": 10
+    }, {
+      "Date": 1632893369,
+      "ID": 1486,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Antitower",
+      "Points": 10
+    }, {
+      "Date": 1633232823,
+      "ID": 1599,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Sohr Khai",
+      "Points": 10
+    }, {
+      "Date": 1633670037,
+      "ID": 1637,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Xelphatol",
+      "Points": 10
+    }, {
+      "Date": 1633888531,
+      "ID": 1686,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Baelsar's Wall",
+      "Points": 10
+    }, {
+      "Date": 1630642262,
+      "ID": 884,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Labyrinth of the Ancients",
+      "Points": 10
+    }, {
+      "Date": 1630642262,
+      "ID": 996,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: Syrcus Tower",
+      "Points": 10
+    }, {
+      "Date": 1630681359,
+      "ID": 1069,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The World of Darkness",
+      "Points": 10
+    }, {
+      "Date": 1632080726,
+      "ID": 680,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Binding Coil of Bahamut I",
+      "Points": 10
+    }, {
+      "Date": 1632083289,
+      "ID": 681,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Binding Coil of Bahamut II",
+      "Points": 10
+    }, {
+      "Date": 1632154278,
+      "ID": 682,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Binding Coil of Bahamut III",
+      "Points": 10
+    }, {
+      "Date": 1632198741,
+      "ID": 684,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Binding Coil of Bahamut V",
+      "Points": 10
+    }, {
+      "Date": 1632373416,
+      "ID": 890,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Second Coil of Bahamut I",
+      "Points": 10
+    }, {
+      "Date": 1634465299,
+      "ID": 1401,
+      "Icon": "/i/001000/001001.png",
+      "Name": "Mapping the Realm: The Void Ark",
+      "Points": 10
+    }, {
+      "Date": 1632043859,
+      "ID": 1433,
+      "Icon": "/i/025000/025945.png",
+      "Name": "The Leader of the Band I",
+      "Points": 5
+    }, {
+      "Date": 1626620582,
+      "ID": 114,
+      "Icon": "/i/025000/025919.png",
+      "Name": "On the Payroll I",
+      "Points": 5
+    }, {
+      "Date": 1627165824,
+      "ID": 115,
+      "Icon": "/i/025000/025919.png",
+      "Name": "On the Payroll II",
+      "Points": 5
+    }, {
+      "Date": 1628434964,
+      "ID": 116,
+      "Icon": "/i/025000/025919.png",
+      "Name": "On the Payroll III",
+      "Points": 5
+    }, {
+      "Date": 1629410066,
+      "ID": 296,
+      "Icon": "/i/020000/020201.png",
+      "Name": "Getting Too Attached I",
+      "Points": 5
+    }, {
+      "Date": 1629067671,
+      "ID": 301,
+      "Icon": "/i/020000/020206.png",
+      "Name": "Beginner's Luck",
+      "Points": 10
+    }, {
+      "Date": 1627770143,
+      "ID": 305,
+      "Icon": "/i/020000/020209.png",
+      "Name": "An Extract Science I",
+      "Points": 5
+    }, {
+      "Date": 1628467644,
+      "ID": 306,
+      "Icon": "/i/020000/020210.png",
+      "Name": "An Extract Science II",
+      "Points": 5
+    }],
+    "Points": 1145
+  },
+  "AchievementsPublic": true,
+  "Character": {
+    "ActiveClassJob": {
+      "Class": {
+        "Abbreviation": "GNB",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 37,
+        "Icon": "/cj/1/gunbreaker.png",
+        "Name": "gunbreaker",
+        "Url": "/ClassJob/37"
+      },
+      "ExpLevel": 10227870,
+      "ExpLevelMax": 19750000,
+      "ExpLevelTogo": 9522130,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "GNB",
+        "ID": 37,
+        "Icon": "/cj/1/gunbreaker.png",
+        "Name": "gunbreaker",
+        "Url": "/ClassJob/37"
+      },
+      "Level": 74,
+      "Name": "gunbreaker / gunbreaker",
+      "UnlockedState": {
+        "ID": 37,
+        "Name": "Gunbreaker"
+      }
+    },
+    "Avatar": "https://img2.finalfantasyxiv.com/f/134fa386e5066cd060d44fc3c83fbb9d_96ab1df8877c1f8ba6a89a39cccfd437fc0_96x96.jpg?1636384216",
+    "Bio": "-",
+    "ClassJobs": [{
+      "Class": {
+        "Abbreviation": "GLA",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 1,
+        "Icon": "/cj/1/gladiator.png",
+        "Name": "gladiator",
+        "Url": "/ClassJob/1"
+      },
+      "ExpLevel": 657211,
+      "ExpLevelMax": 4470000,
+      "ExpLevelTogo": 3812789,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "PLD",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 19,
+        "Icon": "/cj/1/paladin.png",
+        "Name": "paladin",
+        "Url": "/ClassJob/19"
+      },
+      "Level": 60,
+      "Name": "gladiator / paladin",
+      "UnlockedState": {
+        "ID": 19,
+        "Name": "Paladin"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "MRD",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 3,
+        "Icon": "/cj/1/marauder.png",
+        "Name": "marauder",
+        "Url": "/ClassJob/3"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "WAR",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 21,
+        "Icon": "/cj/1/warrior.png",
+        "Name": "warrior",
+        "Url": "/ClassJob/21"
+      },
+      "Level": 0,
+      "Name": "marauder / warrior",
+      "UnlockedState": {
+        "ID": 3,
+        "Name": "Marauder"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "DRK",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 32,
+        "Icon": "/cj/1/darkknight.png",
+        "Name": "dark knight",
+        "Url": "/ClassJob/32"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "DRK",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 32,
+        "Icon": "/cj/1/darkknight.png",
+        "Name": "dark knight",
+        "Url": "/ClassJob/32"
+      },
+      "Level": 0,
+      "Name": "dark knight / dark knight",
+      "UnlockedState": {
+        "ID": 32,
+        "Name": "Dark Knight"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "GNB",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 37,
+        "Icon": "/cj/1/gunbreaker.png",
+        "Name": "gunbreaker",
+        "Url": "/ClassJob/37"
+      },
+      "ExpLevel": 10227870,
+      "ExpLevelMax": 19750000,
+      "ExpLevelTogo": 9522130,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "GNB",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 37,
+        "Icon": "/cj/1/gunbreaker.png",
+        "Name": "gunbreaker",
+        "Url": "/ClassJob/37"
+      },
+      "Level": 74,
+      "Name": "gunbreaker / gunbreaker",
+      "UnlockedState": {
+        "ID": 37,
+        "Name": "Gunbreaker"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "PGL",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 2,
+        "Icon": "/cj/1/pugilist.png",
+        "Name": "pugilist",
+        "Url": "/ClassJob/2"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "MNK",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 20,
+        "Icon": "/cj/1/monk.png",
+        "Name": "monk",
+        "Url": "/ClassJob/20"
+      },
+      "Level": 0,
+      "Name": "pugilist / monk",
+      "UnlockedState": {
+        "ID": 2,
+        "Name": "Pugilist"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "LNC",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 4,
+        "Icon": "/cj/1/lancer.png",
+        "Name": "lancer",
+        "Url": "/ClassJob/4"
+      },
+      "ExpLevel": 61127,
+      "ExpLevelMax": 175900,
+      "ExpLevelTogo": 114773,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "DRG",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 22,
+        "Icon": "/cj/1/dragoon.png",
+        "Name": "dragoon",
+        "Url": "/ClassJob/22"
+      },
+      "Level": 31,
+      "Name": "lancer / dragoon",
+      "UnlockedState": {
+        "ID": 22,
+        "Name": "Dragoon"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "ROG",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 29,
+        "Icon": "/cj/1/rogue.png",
+        "Name": "rogue",
+        "Url": "/ClassJob/29"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 300,
+      "ExpLevelTogo": 300,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "NIN",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 30,
+        "Icon": "/cj/1/ninja.png",
+        "Name": "ninja",
+        "Url": "/ClassJob/30"
+      },
+      "Level": 1,
+      "Name": "rogue / ninja",
+      "UnlockedState": {
+        "ID": 29,
+        "Name": "Rogue"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "SAM",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 34,
+        "Icon": "/cj/1/samurai.png",
+        "Name": "samurai",
+        "Url": "/ClassJob/34"
+      },
+      "ExpLevel": 96000,
+      "ExpLevelMax": 864000,
+      "ExpLevelTogo": 768000,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "SAM",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 34,
+        "Icon": "/cj/1/samurai.png",
+        "Name": "samurai",
+        "Url": "/ClassJob/34"
+      },
+      "Level": 50,
+      "Name": "samurai / samurai",
+      "UnlockedState": {
+        "ID": 34,
+        "Name": "Samurai"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "CNJ",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 6,
+        "Icon": "/cj/1/conjurer.png",
+        "Name": "conjurer",
+        "Url": "/ClassJob/6"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "WHM",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 24,
+        "Icon": "/cj/1/whitemage.png",
+        "Name": "white mage",
+        "Url": "/ClassJob/24"
+      },
+      "Level": 0,
+      "Name": "conjurer / white mage",
+      "UnlockedState": {
+        "ID": 6,
+        "Name": "Conjurer"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "ACN",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 26,
+        "Icon": "/cj/1/arcanist.png",
+        "Name": "arcanist",
+        "Url": "/ClassJob/26"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "SCH",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 28,
+        "Icon": "/cj/1/scholar.png",
+        "Name": "scholar",
+        "Url": "/ClassJob/28"
+      },
+      "Level": 0,
+      "Name": "arcanist / scholar",
+      "UnlockedState": {
+        "ID": 28,
+        "Name": "Scholar"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "AST",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 33,
+        "Icon": "/cj/1/astrologian.png",
+        "Name": "astrologian",
+        "Url": "/ClassJob/33"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "AST",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 33,
+        "Icon": "/cj/1/astrologian.png",
+        "Name": "astrologian",
+        "Url": "/ClassJob/33"
+      },
+      "Level": 0,
+      "Name": "astrologian / astrologian",
+      "UnlockedState": {
+        "ID": 33,
+        "Name": "Astrologian"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "ARC",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 5,
+        "Icon": "/cj/1/archer.png",
+        "Name": "archer",
+        "Url": "/ClassJob/5"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "BRD",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 23,
+        "Icon": "/cj/1/bard.png",
+        "Name": "bard",
+        "Url": "/ClassJob/23"
+      },
+      "Level": 0,
+      "Name": "archer / bard",
+      "UnlockedState": {
+        "ID": 5,
+        "Name": "Archer"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "MCH",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 31,
+        "Icon": "/cj/1/machinist.png",
+        "Name": "machinist",
+        "Url": "/ClassJob/31"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "MCH",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 31,
+        "Icon": "/cj/1/machinist.png",
+        "Name": "machinist",
+        "Url": "/ClassJob/31"
+      },
+      "Level": 0,
+      "Name": "machinist / machinist",
+      "UnlockedState": {
+        "ID": 31,
+        "Name": "Machinist"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "DNC",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 38,
+        "Icon": "/cj/1/dancer.png",
+        "Name": "dancer",
+        "Url": "/ClassJob/38"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "DNC",
+        "ClassJobCategory": {
+          "ID": 30,
+          "Name": "Disciple of War"
+        },
+        "ID": 38,
+        "Icon": "/cj/1/dancer.png",
+        "Name": "dancer",
+        "Url": "/ClassJob/38"
+      },
+      "Level": 0,
+      "Name": "dancer / dancer",
+      "UnlockedState": {
+        "ID": 38,
+        "Name": "Dancer"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "THM",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 7,
+        "Icon": "/cj/1/thaumaturge.png",
+        "Name": "thaumaturge",
+        "Url": "/ClassJob/7"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "BLM",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 25,
+        "Icon": "/cj/1/blackmage.png",
+        "Name": "black mage",
+        "Url": "/ClassJob/25"
+      },
+      "Level": 0,
+      "Name": "thaumaturge / black mage",
+      "UnlockedState": {
+        "ID": 7,
+        "Name": "Thaumaturge"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "ACN",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 26,
+        "Icon": "/cj/1/arcanist.png",
+        "Name": "arcanist",
+        "Url": "/ClassJob/26"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "SMN",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 27,
+        "Icon": "/cj/1/summoner.png",
+        "Name": "summoner",
+        "Url": "/ClassJob/27"
+      },
+      "Level": 0,
+      "Name": "arcanist / summoner",
+      "UnlockedState": {
+        "ID": 26,
+        "Name": "Arcanist"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "RDM",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 35,
+        "Icon": "/cj/1/redmage.png",
+        "Name": "red mage",
+        "Url": "/ClassJob/35"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "RDM",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 35,
+        "Icon": "/cj/1/redmage.png",
+        "Name": "red mage",
+        "Url": "/ClassJob/35"
+      },
+      "Level": 0,
+      "Name": "red mage / red mage",
+      "UnlockedState": {
+        "ID": 35,
+        "Name": "Red Mage"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "BLU",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 36,
+        "Icon": "/cj/1/bluemage.png",
+        "Name": "blue mage",
+        "Url": "/ClassJob/36"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "BLU",
+        "ClassJobCategory": {
+          "ID": 31,
+          "Name": "Disciple of Magic"
+        },
+        "ID": 36,
+        "Icon": "/cj/1/bluemage.png",
+        "Name": "blue mage",
+        "Url": "/ClassJob/36"
+      },
+      "Level": 0,
+      "Name": "blue mage / blue mage",
+      "UnlockedState": {
+        "ID": null,
+        "Name": "Blue Mage (Limited Job)"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "CRP",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 8,
+        "Icon": "/cj/1/carpenter.png",
+        "Name": "carpenter",
+        "Url": "/ClassJob/8"
+      },
+      "ExpLevel": 1015,
+      "ExpLevelMax": 1700,
+      "ExpLevelTogo": 685,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "CRP",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 8,
+        "Icon": "/cj/1/carpenter.png",
+        "Name": "carpenter",
+        "Url": "/ClassJob/8"
+      },
+      "Level": 4,
+      "Name": "carpenter / carpenter",
+      "UnlockedState": {
+        "ID": 8,
+        "Name": "Carpenter"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "BSM",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 9,
+        "Icon": "/cj/1/blacksmith.png",
+        "Name": "blacksmith",
+        "Url": "/ClassJob/9"
+      },
+      "ExpLevel": 1849,
+      "ExpLevelMax": 6000,
+      "ExpLevelTogo": 4151,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "BSM",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 9,
+        "Icon": "/cj/1/blacksmith.png",
+        "Name": "blacksmith",
+        "Url": "/ClassJob/9"
+      },
+      "Level": 7,
+      "Name": "blacksmith / blacksmith",
+      "UnlockedState": {
+        "ID": 9,
+        "Name": "Blacksmith"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "ARM",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 10,
+        "Icon": "/cj/1/armorer.png",
+        "Name": "armorer",
+        "Url": "/ClassJob/10"
+      },
+      "ExpLevel": 693,
+      "ExpLevelMax": 437600,
+      "ExpLevelTogo": 436907,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "ARM",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 10,
+        "Icon": "/cj/1/armorer.png",
+        "Name": "armorer",
+        "Url": "/ClassJob/10"
+      },
+      "Level": 46,
+      "Name": "armorer / armorer",
+      "UnlockedState": {
+        "ID": 10,
+        "Name": "Armorer"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "GSM",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 11,
+        "Icon": "/cj/1/goldsmith.png",
+        "Name": "goldsmith",
+        "Url": "/ClassJob/11"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "GSM",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 11,
+        "Icon": "/cj/1/goldsmith.png",
+        "Name": "goldsmith",
+        "Url": "/ClassJob/11"
+      },
+      "Level": 0,
+      "Name": "goldsmith / goldsmith",
+      "UnlockedState": {
+        "ID": 11,
+        "Name": "Goldsmith"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "LTW",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 12,
+        "Icon": "/cj/1/leatherworker.png",
+        "Name": "leatherworker",
+        "Url": "/ClassJob/12"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "LTW",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 12,
+        "Icon": "/cj/1/leatherworker.png",
+        "Name": "leatherworker",
+        "Url": "/ClassJob/12"
+      },
+      "Level": 0,
+      "Name": "leatherworker / leatherworker",
+      "UnlockedState": {
+        "ID": 12,
+        "Name": "Leatherworker"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "WVR",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 13,
+        "Icon": "/cj/1/weaver.png",
+        "Name": "weaver",
+        "Url": "/ClassJob/13"
+      },
+      "ExpLevel": 1648,
+      "ExpLevelMax": 2300,
+      "ExpLevelTogo": 652,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "WVR",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 13,
+        "Icon": "/cj/1/weaver.png",
+        "Name": "weaver",
+        "Url": "/ClassJob/13"
+      },
+      "Level": 5,
+      "Name": "weaver / weaver",
+      "UnlockedState": {
+        "ID": 13,
+        "Name": "Weaver"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "ALC",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 14,
+        "Icon": "/cj/1/alchemist.png",
+        "Name": "alchemist",
+        "Url": "/ClassJob/14"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "ALC",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 14,
+        "Icon": "/cj/1/alchemist.png",
+        "Name": "alchemist",
+        "Url": "/ClassJob/14"
+      },
+      "Level": 0,
+      "Name": "alchemist / alchemist",
+      "UnlockedState": {
+        "ID": 14,
+        "Name": "Alchemist"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "CUL",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 15,
+        "Icon": "/cj/1/culinarian.png",
+        "Name": "culinarian",
+        "Url": "/ClassJob/15"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "CUL",
+        "ClassJobCategory": {
+          "ID": 33,
+          "Name": "Disciple of the Hand"
+        },
+        "ID": 15,
+        "Icon": "/cj/1/culinarian.png",
+        "Name": "culinarian",
+        "Url": "/ClassJob/15"
+      },
+      "Level": 0,
+      "Name": "culinarian / culinarian",
+      "UnlockedState": {
+        "ID": 15,
+        "Name": "Culinarian"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "MIN",
+        "ClassJobCategory": {
+          "ID": 32,
+          "Name": "Disciple of the Land"
+        },
+        "ID": 16,
+        "Icon": "/cj/1/miner.png",
+        "Name": "miner",
+        "Url": "/ClassJob/16"
+      },
+      "ExpLevel": 550575,
+      "ExpLevelMax": 1555200,
+      "ExpLevelTogo": 1004625,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "MIN",
+        "ClassJobCategory": {
+          "ID": 32,
+          "Name": "Disciple of the Land"
+        },
+        "ID": 16,
+        "Icon": "/cj/1/miner.png",
+        "Name": "miner",
+        "Url": "/ClassJob/16"
+      },
+      "Level": 53,
+      "Name": "miner / miner",
+      "UnlockedState": {
+        "ID": 16,
+        "Name": "Miner"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "BTN",
+        "ClassJobCategory": {
+          "ID": 32,
+          "Name": "Disciple of the Land"
+        },
+        "ID": 17,
+        "Icon": "/cj/1/botanist.png",
+        "Name": "botanist",
+        "Url": "/ClassJob/17"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "BTN",
+        "ClassJobCategory": {
+          "ID": 32,
+          "Name": "Disciple of the Land"
+        },
+        "ID": 17,
+        "Icon": "/cj/1/botanist.png",
+        "Name": "botanist",
+        "Url": "/ClassJob/17"
+      },
+      "Level": 0,
+      "Name": "botanist / botanist",
+      "UnlockedState": {
+        "ID": 17,
+        "Name": "Botanist"
+      }
+    }, {
+      "Class": {
+        "Abbreviation": "FSH",
+        "ClassJobCategory": {
+          "ID": 32,
+          "Name": "Disciple of the Land"
+        },
+        "ID": 18,
+        "Icon": "/cj/1/fisher.png",
+        "Name": "fisher",
+        "Url": "/ClassJob/18"
+      },
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "IsSpecialised": false,
+      "Job": {
+        "Abbreviation": "FSH",
+        "ClassJobCategory": {
+          "ID": 32,
+          "Name": "Disciple of the Land"
+        },
+        "ID": 18,
+        "Icon": "/cj/1/fisher.png",
+        "Name": "fisher",
+        "Url": "/ClassJob/18"
+      },
+      "Level": 0,
+      "Name": "fisher / fisher",
+      "UnlockedState": {
+        "ID": 18,
+        "Name": "Fisher"
+      }
+    }],
+    "ClassJobsBozjan": {
+      "Level": null,
+      "Mettle": null,
+      "Name": "Resistance Rank"
+    },
+    "ClassJobsElemental": {
+      "ExpLevel": 0,
+      "ExpLevelMax": 0,
+      "ExpLevelTogo": 0,
+      "Level": 0,
+      "Name": "Elemental Level"
+    },
+    "DC": "Aether",
+    "FreeCompanyId": null,
+    "FreeCompanyName": null,
+    "GearSet": {
+      "Attributes": [{
+        "Attribute": {
+          "ID": 1,
+          "Name": "Strength"
+        },
+        "Value": 3114
+      }, {
+        "Attribute": {
+          "ID": 2,
+          "Name": "Dexterity"
+        },
+        "Value": 293
+      }, {
+        "Attribute": {
+          "ID": 3,
+          "Name": "Vitality"
+        },
+        "Value": 3542
+      }, {
+        "Attribute": {
+          "ID": 4,
+          "Name": "Intelligence"
+        },
+        "Value": 189
+      }, {
+        "Attribute": {
+          "ID": 5,
+          "Name": "Mind"
+        },
+        "Value": 309
+      }, {
+        "Attribute": {
+          "ID": 27,
+          "Name": "Critical Hit"
+        },
+        "Value": 1314
+      }, {
+        "Attribute": {
+          "ID": 44,
+          "Name": "Determination"
+        },
+        "Value": 1821
+      }, {
+        "Attribute": {
+          "ID": 22,
+          "Name": "Direct Hit Rate"
+        },
+        "Value": 449
+      }, {
+        "Attribute": {
+          "ID": 21,
+          "Name": "Defense"
+        },
+        "Value": 5768
+      }, {
+        "Attribute": {
+          "ID": 24,
+          "Name": "Magic Defense"
+        },
+        "Value": 5768
+      }, {
+        "Attribute": {
+          "ID": 20,
+          "Name": "Attack Power"
+        },
+        "Value": 3114
+      }, {
+        "Attribute": {
+          "ID": 45,
+          "Name": "Skill Speed"
+        },
+        "Value": 1126
+      }, {
+        "Attribute": {
+          "ID": 33,
+          "Name": "Attack Magic Potency"
+        },
+        "Value": 189
+      }, {
+        "Attribute": {
+          "ID": 34,
+          "Name": "Healing Magic Potency"
+        },
+        "Value": 309
+      }, {
+        "Attribute": {
+          "ID": 46,
+          "Name": "Spell Speed"
+        },
+        "Value": 368
+      }, {
+        "Attribute": {
+          "ID": 19,
+          "Name": "Tenacity"
+        },
+        "Value": 1544
+      }, {
+        "Attribute": {
+          "ID": 6,
+          "Name": "Piety"
+        },
+        "Value": 310
+      }, {
+        "Attribute": {
+          "ID": 7,
+          "Name": "HP"
+        },
+        "Value": 87120
+      }, {
+        "Attribute": {
+          "ID": 8,
+          "Name": "MP"
+        },
+        "Value": 10000
+      }],
+      "Class": {
+        "Abbreviation": "GNB",
+        "ID": 37,
+        "Icon": "/cj/1/gunbreaker.png",
+        "Name": "gunbreaker",
+        "Url": "/ClassJob/37"
+      },
+      "Gear": {
+        "Body": {
+          "Creator": null,
+          "Dye": {
+            "ID": 5734,
+            "Icon": "/i/022000/022807.png",
+            "Name": "Soot Black Dye"
+          },
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25967,
+            "Icon": "/i/042000/042980.png",
+            "ItemUICategory": {
+              "ID": 35,
+              "Name": "Body"
+            },
+            "LevelEquip": 74,
+            "LevelItem": 403,
+            "Name": "Bluespirit Cuirass of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5668,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Heavens' Eye Materia V",
+            "Url": "/Item/5668"
+          }, {
+            "ID": 5668,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Heavens' Eye Materia V",
+            "Url": "/Item/5668"
+          }],
+          "Mirage": {
+            "ID": 14940,
+            "Icon": "/i/043000/043614.png",
+            "Name": "Wind Silk Coatee"
+          }
+        },
+        "Bracelets": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25698,
+            "Icon": "/i/047000/047851.png",
+            "ItemUICategory": {
+              "ID": 42,
+              "Name": "Bracelets"
+            },
+            "LevelEquip": 70,
+            "LevelItem": 385,
+            "Name": "Islewolf Bracelet of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5673,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Savage Aim Materia V",
+            "Url": "/Item/5673"
+          }],
+          "Mirage": null
+        },
+        "Earrings": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 34,
+              "Name": "Disciples of War or Magic"
+            },
+            "ID": 33648,
+            "Icon": "/i/048000/048771.png",
+            "ItemUICategory": {
+              "ID": 41,
+              "Name": "Earrings"
+            },
+            "LevelEquip": 1,
+            "LevelItem": 430,
+            "Name": "Menphina's Earring",
+            "Rarity": 1
+          },
+          "Materia": [],
+          "Mirage": null
+        },
+        "Feet": {
+          "Creator": null,
+          "Dye": {
+            "ID": 30122,
+            "Icon": "/i/022000/022816.png",
+            "Name": "Gunmetal Black Dye"
+          },
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25810,
+            "Icon": "/i/047000/047657.png",
+            "ItemUICategory": {
+              "ID": 38,
+              "Name": "Feet"
+            },
+            "LevelEquip": 72,
+            "LevelItem": 395,
+            "Name": "Gliderskin Thighboots of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5673,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Savage Aim Materia V",
+            "Url": "/Item/5673"
+          }, {
+            "ID": 5673,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Savage Aim Materia V",
+            "Url": "/Item/5673"
+          }],
+          "Mirage": {
+            "ID": 10045,
+            "Icon": "/i/046000/046441.png",
+            "Name": "Strife Boots"
+          }
+        },
+        "Hands": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25968,
+            "Icon": "/i/049000/049636.png",
+            "ItemUICategory": {
+              "ID": 37,
+              "Name": "Hands"
+            },
+            "LevelEquip": 74,
+            "LevelItem": 403,
+            "Name": "Bluespirit Gauntlets of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5668,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Heavens' Eye Materia V",
+            "Url": "/Item/5668"
+          }, {
+            "ID": 5668,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Heavens' Eye Materia V",
+            "Url": "/Item/5668"
+          }],
+          "Mirage": {
+            "ID": 3520,
+            "Icon": "/i/044000/044114.png",
+            "Name": "Hyuran Gloves"
+          }
+        },
+        "Head": {
+          "Creator": null,
+          "Dye": {
+            "ID": 5802,
+            "Icon": "/i/022000/022804.png",
+            "Name": "Midnight Blue Dye"
+          },
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25966,
+            "Icon": "/i/041000/041529.png",
+            "ItemUICategory": {
+              "ID": 34,
+              "Name": "Head"
+            },
+            "LevelEquip": 74,
+            "LevelItem": 403,
+            "Name": "Bluespirit Helm of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5718,
+            "Icon": "/i/020000/020259.png",
+            "Name": "Quickarm Materia V",
+            "Url": "/Item/5718"
+          }, {
+            "ID": 5718,
+            "Icon": "/i/020000/020259.png",
+            "Name": "Quickarm Materia V",
+            "Url": "/Item/5718"
+          }],
+          "Mirage": {
+            "ID": 2758,
+            "Icon": "/i/041000/041327.png",
+            "Name": "Steel Goggles"
+          }
+        },
+        "Legs": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25969,
+            "Icon": "/i/057000/057035.png",
+            "ItemUICategory": {
+              "ID": 36,
+              "Name": "Legs"
+            },
+            "LevelEquip": 74,
+            "LevelItem": 403,
+            "Name": "Atrociraptorskin Breeches of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5668,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Heavens' Eye Materia V",
+            "Url": "/Item/5668"
+          }, {
+            "ID": 5668,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Heavens' Eye Materia V",
+            "Url": "/Item/5668"
+          }],
+          "Mirage": {
+            "ID": 16344,
+            "Icon": "/i/045000/045837.png",
+            "Name": "Augmented Shire Custodian's Hose"
+          }
+        },
+        "MainHand": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 149,
+              "Name": "GNB"
+            },
+            "ID": 25963,
+            "Icon": "/i/036000/036037.png",
+            "ItemUICategory": {
+              "ID": 106,
+              "Name": "Gunbreaker's Arm"
+            },
+            "LevelEquip": 74,
+            "LevelItem": 403,
+            "Name": "Bluespirit Gunblade",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5718,
+            "Icon": "/i/020000/020259.png",
+            "Name": "Quickarm Materia V",
+            "Url": "/Item/5718"
+          }, {
+            "ID": 5718,
+            "Icon": "/i/020000/020259.png",
+            "Name": "Quickarm Materia V",
+            "Url": "/Item/5718"
+          }],
+          "Mirage": null
+        },
+        "Necklace": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 26013,
+            "Icon": "/i/047000/047814.png",
+            "ItemUICategory": {
+              "ID": 40,
+              "Name": "Necklace"
+            },
+            "LevelEquip": 74,
+            "LevelItem": 403,
+            "Name": "Atrociraptorskin Necklace of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5667,
+            "Icon": "/i/020000/020224.png",
+            "Name": "Heavens' Eye Materia IV",
+            "Url": "/Item/5667"
+          }],
+          "Mirage": null
+        },
+        "Ring1": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25863,
+            "Icon": "/i/048000/048252.png",
+            "ItemUICategory": {
+              "ID": 43,
+              "Name": "Ring"
+            },
+            "LevelEquip": 72,
+            "LevelItem": 395,
+            "Name": "Diaspore Ring of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5683,
+            "Icon": "/i/020000/020256.png",
+            "Name": "Battledance Materia V",
+            "Url": "/Item/5683"
+          }],
+          "Mirage": null
+        },
+        "Ring2": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25703,
+            "Icon": "/i/048000/048249.png",
+            "ItemUICategory": {
+              "ID": 43,
+              "Name": "Ring"
+            },
+            "LevelEquip": 70,
+            "LevelItem": 385,
+            "Name": "Islewolf Ring of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5673,
+            "Icon": "/i/020000/020258.png",
+            "Name": "Savage Aim Materia V",
+            "Url": "/Item/5673"
+          }],
+          "Mirage": null
+        },
+        "SoulCrystal": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 149,
+              "Name": "GNB"
+            },
+            "ID": 25216,
+            "Icon": "/i/026000/026061.png",
+            "ItemUICategory": {
+              "ID": 62,
+              "Name": "Soul Crystal"
+            },
+            "LevelEquip": 30,
+            "LevelItem": 30,
+            "Name": "Soul of the Gunbreaker",
+            "Rarity": 1
+          },
+          "Materia": [],
+          "Mirage": null
+        },
+        "Waist": {
+          "Creator": null,
+          "Dye": null,
+          "Item": {
+            "ClassJobCategory": {
+              "ID": 59,
+              "Name": "GLA MRD PLD WAR DRK GNB"
+            },
+            "ID": 25651,
+            "Icon": "/i/047000/047202.png",
+            "ItemUICategory": {
+              "ID": 39,
+              "Name": "Waist"
+            },
+            "LevelEquip": 70,
+            "LevelItem": 385,
+            "Name": "Deepgold Plate Belt of Fending",
+            "Rarity": 1
+          },
+          "Materia": [{
+            "ID": 5683,
+            "Icon": "/i/020000/020256.png",
+            "Name": "Battledance Materia V",
+            "Url": "/Item/5683"
+          }],
+          "Mirage": null
+        }
+      },
+      "GearKey": "37_37",
+      "Job": {
+        "Abbreviation": "GNB",
+        "ID": 37,
+        "Icon": "/cj/1/gunbreaker.png",
+        "Name": "gunbreaker",
+        "Url": "/ClassJob/37"
+      },
+      "Level": 74
+    },
+    "Gender": 1,
+    "GenderID": 1,
+    "GrandCompany": {
+      "Company": {
+        "ID": 2,
+        "Name": "Order of the Twin Adder",
+        "Url": "/GrandCompany/2"
+      },
+      "Rank": {
+        "ID": 10,
+        "Icon": "/i/083000/083060.png",
+        "Name": "First Serpent Lieutenant",
+        "Url": "/GCRankGridaniaMaleText/10"
+      }
+    },
+    "GuardianDeity": {
+      "GuardianDeity": null,
+      "ID": 5,
+      "Icon": "/i/061000/061605.png",
+      "Name": "Llymlaen, the Navigator",
+      "Url": "/GuardianDeity/5"
+    },
+    "ID": 37684988,
+    "Lang": null,
+    "Name": "Ahdeen H'ru",
+    "Nameday": "14th Sun of the 3rd Astral Moon",
+    "ParseDate": 1636387022,
+    "Portrait": "https://img2.finalfantasyxiv.com/f/134fa386e5066cd060d44fc3c83fbb9d_96ab1df8877c1f8ba6a89a39cccfd437fl0_640x873.jpg?1636384216",
+    "PvPTeamId": null,
+    "Race": {
+      "ID": 1,
+      "Name": "Hyur",
+      "Url": "/Race/1"
+    },
+    "Server": "Cactuar",
+    "Title": {
+      "ID": 432,
+      "Icon": "/c/Title.png",
+      "Name": "Sworn Protector",
+      "Url": "/Title/432"
+    },
+    "TitleTop": true,
+    "Town": {
+      "ID": 2,
+      "Icon": "/i/060000/060882.png",
+      "Name": "Gridania",
+      "Url": "/Town/2"
+    },
+    "Tribe": {
+      "ID": 1,
+      "Icon": null,
+      "Name": "Midlander",
+      "Url": "/Tribe/1"
+    }
+  },
+  "FreeCompany": null,
+  "FreeCompanyMembers": null,
+  "Friends": null,
+  "FriendsPublic": null,
+  "Minions": [{
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/9e/9ed9a88950ba83a052d6f7c32efe5bd89530bac7.png?n5.58",
+    "Name": "Princely Hatchling"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/03/03a9b9d5084a9353772b50e68af4c05ed3aa1687.png?n5.58",
+    "Name": "Morbol Seedling"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/15/152ddfeb000c8e444add2f771669e64c63ff631a.png?n5.58",
+    "Name": "Coeurl Kitten"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/ab/abf2781ef3b771006dc5278b8d79ce4f302184dc.png?n5.58",
+    "Name": "Pudgy Puk"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/61/6157859677817d7b6ee47cedae86fba3269a4676.png?n5.58",
+    "Name": "Buffalo Calf"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/a5/a5556868a780d266dfa9d97f5182ff25d97f9498.png?n5.58",
+    "Name": "Wolf Pup"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/b6/b66c640b89146cc5d7f8790175d8b48b40c8c9d4.png?n5.58",
+    "Name": "Goobbue Sproutling"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/ea/ea933f33757a9b29c121cfa5441601475891ccce.png?n5.58",
+    "Name": "Demon Brick"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/75/759e3a1737050cd7895c1edd1bed828f172d45c0.png?n5.58",
+    "Name": "Naughty Nanka"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/6d/6de5f4c3282cdfff7d54ab572c4346d8c589b283.png?n5.58",
+    "Name": "Paissa Brat"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/04/04d3e61e58659c45bc99d0a015c6a4ddc2d2c72a.png?n5.58",
+    "Name": "Poro Roggo"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/2c/2cb9133be2906463d52db54f9b2b7ec33a448c1c.png?n5.58",
+    "Name": "Lesser Panda"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/08/08b0ae830043b70780751d4113ca267ce6760dbf.png?n5.58",
+    "Name": "Aurelia Polyp"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/ff/ffd24aab7d32f782d0708261d17800e6c976acb3.png?n5.58",
+    "Name": "Bluebird"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/48/48d2e457ecadcbce2df221af06387349d7cc3407.png?n5.58",
+    "Name": "Wind-up Alphinaud"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/66/66b7323f24c5c70bb40d5d31e8645028f871ac8c.png?n5.58",
+    "Name": "Wind-up Cid"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/26/268dd5cfc2afc09b50c358fe315d923917e3d2b0.png?n5.58",
+    "Name": "Wind-up Moenbryda"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/17/17daf605f3391814decdd57fd188102881dadd3b.png?n5.58",
+    "Name": "Wind-up Haurchefant"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/24/24251c30825e8847a6ea17f80a0e33c6f9ee325a.png?n5.58",
+    "Name": "Wind-up Aymeric"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/51/51d013686ee90bd13a35d77c4e932f3dd248f8c0.png?n5.58",
+    "Name": "Midgardsormr"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/c5/c566616066e799de5ede4a5a79e1d720c12ae715.png?n5.58",
+    "Name": "Mammet #003G"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/b2/b28e969d97a80f0a0505c081fc652dd5b8320d31.png?n5.58",
+    "Name": "Tengu Doll"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/d8/d8666795d88025ac8283db68e5df2aa337a51749.png?n5.58",
+    "Name": "Wind-up Airship"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/81/81906792c06ce4edaa4c726defc28454245ce394.png?n5.58",
+    "Name": "Wind-up Onion Knight"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/67/670fae2cdfddd22e50009b1697887d310b03a1ef.png?n5.58",
+    "Name": "Wind-up Palom"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/09/09021b148c97ea3839b4672f8e86e23f40e74453.png?n5.58",
+    "Name": "Wind-up Brickman"
+  }],
+  "Mounts": [{
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/e6/e6cd1b44f2e625546c0a4c4ee9dff3de07b02082.png?n5.58",
+    "Name": "Company Chocobo"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/2e/2e0e69537289e0fece83b6fc1db06c5ad0da2f9c.png?n5.58",
+    "Name": "Black Chocobo"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/ed/edcd84ac3929f91a6f05d35f2aa7fdc44ce8fca1.png?n5.58",
+    "Name": "Magitek Armor"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/01/01bc91c75322b8c24367121308560c87b0526eab.png?n5.58",
+    "Name": "Magitek Death Claw"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/8f/8fd8e5c6131fc4f972b3e29cad4096348551a9b7.png?n5.58",
+    "Name": "Ahriman"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/35/35ad78f8f2781853996027c6c698ddf07f7fe6c4.png?n5.58",
+    "Name": "Behemoth"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/3f/3f7c9d52249e46965985d8c5298891b9cfe0158e.png?n5.58",
+    "Name": "Polar Bear"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/87/87f3fa899909fff94c5981a1c9869e262bcb18f8.png?n5.58",
+    "Name": "Manacutter"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/c6/c6ac54baaa651974d19492a0685fb5a6f061c5a6.png?n5.58",
+    "Name": "Regalia Type-G"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/98/98ca80ee41555010ea43b20e13cb09a88eb10447.png?n5.58",
+    "Name": "Aithon"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/25/25c30edf6a3823c579bd0834dcbb691fabcabd08.png?n5.58",
+    "Name": "Xanthos"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/b7/b76a674cb0a66f5eef23e1af99bc0ebe7243d344.png?n5.58",
+    "Name": "Gullfaxi"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/29/29339eefcb3b0fa1ec0c9b42da2602f35cf1f277.png?n5.58",
+    "Name": "Enbarr"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/51/51b72bc49891c941fa12c5915c568cfdb38b6969.png?n5.58",
+    "Name": "Markab"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/c6/c68ae80fe089ceec3c19921cd94e96dbfa5e7772.png?n5.58",
+    "Name": "Boreas"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/72/72833e97884788d44bdd233c007670751bcb624f.png?n5.58",
+    "Name": "Dark Lanner"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/98/9894c0ce3662c696b271f82f3aa8ac4a2624d348.png?n5.58",
+    "Name": "Auspicious Kamuy"
+  }, {
+    "Icon": "https://img.finalfantasyxiv.com/lds/pc/global/images/itemicon/82/829fd62134e593829c2aaf23c92b1dfc36549f8a.png?n5.58",
+    "Name": "Midgardsormr"
+  }],
+  "PvPTeam": null
+}

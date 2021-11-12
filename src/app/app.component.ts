@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonServiceService } from './common-service.service';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { charPanelState } from './store/character-panel.state';
+import { charPanelState } from './character-panel/character-panel.state';
 import * as cselect from './store/character-profile.selector';
 
 @Component({

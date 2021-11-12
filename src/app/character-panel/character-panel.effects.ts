@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { catchError, map, mergeMap } from 'rxjs/operators';
-import * as charaction from './character-profiler.actions'
+import * as charaction from './character-panel.actions'
 import { createEffect, Actions, ofType  } from "@ngrx/effects";
 
 import { GetCharacterServiceService } from "../get-character-service.service";
@@ -15,13 +15,15 @@ import { forkJoin, of } from "rxjs";
         someEffect$ = createEffect(() =>this.actions$.pipe(
             ofType(charaction.getChars),
             mergeMap((action) => {
-                let req1 = this.getCharacterService.getaAllCharacterInfo(action.id)
+                // let req1 = this.getCharacterService.getaAllCharacterInfo(action.id);
+                let req1 = this.getCharacterService.getMockInfo();
                 let req2 = this.getCharacterService.getMounts();
                 let req3 = this.getCharacterService.getMinions();
                 let req4 = this.getCharacterService.getAchieves();
+                let statu = this.getCharacterService.getstatus();
 
-                 return forkJoin([req1, req2, req3, req4]).pipe(
-                     map(([cRes,moRes, miRes, acRes]) => { 
+                 return forkJoin([req1, req2, req3, req4, statu]).pipe(
+                     map(([cRes,moRes, miRes, acRes, s]) => { 
                          //sort mounts
                          if(cRes.Mounts != null)
                          cRes.Mounts.sort((a, b) => (a.Name > b.Name ? 1 : -1));
@@ -68,7 +70,7 @@ import { forkJoin, of } from "rxjs";
                          cRes.achievementCompletion = Math.round(cRes.achieveCount/acRes.count * 100);
 
                          return charaction.getCharSuccess({character : cRes})
-                }), catchError(e => of(charaction.getCharError())
+                }), catchError(e => of(charaction.getCharError({errorMsg : "The character could not be found on Lodestone. Please try a new search."}))
                 )
                 )
             })

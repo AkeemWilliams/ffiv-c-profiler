@@ -8,8 +8,10 @@
       <input matInput type="text" placeholder="https://na.finalfantasyxiv.com/lodestone/character/1234567"
         [(ngModel)]="characterUrl">
     </mat-form-field>
-    <p class="err-msg" *ngIf="errorShow">Character not Found.</p>
-
+    <!-- <p class="err-msg" *ngIf="errorShow">{{errMsg}}</p> -->
+    <div *ngIf="errMsg$ | async as errorMessage">
+      {{ errorMessage }}
+    </div>
     <button mat-raised-button (click)="searchCharacter()" [ngClass]="characterUrl  ? 'btn-active' : '' "
       [disabled]="!characterUrl">Profile Character</button>
 
