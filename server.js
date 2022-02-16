@@ -15,7 +15,7 @@ app.get('/sample', (req, res) => {
   }
     return setTimeout(() => {
       res.sendFile('sample-char.json', options)
-    }, 3000); 
+    }, 3001); 
 
 });
 
